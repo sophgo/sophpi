@@ -2096,8 +2096,8 @@ struct VREG_RAW_TOP_RAW_BAYER_TYPE_TOPLEFT {
 	union CMDSET_FIELD                      ctrl;
 };
 
-struct VREG_RAW_TOP_RDMI_ENBALE {
-	union REG_RAW_TOP_RDMI_ENBALE           write;
+struct VREG_RAW_TOP_RDMI_ENABLE {
+	union REG_RAW_TOP_RDMI_ENABLE           write;
 	union CMDSET_FIELD                      ctrl;
 };
 
@@ -2190,7 +2190,7 @@ struct VREG_RAW_TOP_T {
 	struct VREG_RAW_TOP_DEBUG                DEBUG;
 	struct VREG_RAW_TOP_DEBUG_SELECT         DEBUG_SELECT;
 	struct VREG_RAW_TOP_RAW_BAYER_TYPE_TOPLEFT  RAW_BAYER_TYPE_TOPLEFT;
-	struct VREG_RAW_TOP_RDMI_ENBALE          RDMI_ENBALE;
+	struct VREG_RAW_TOP_RDMI_ENABLE          RDMI_ENABLE;
 	struct VREG_RAW_TOP_RDMA_SIZE            RDMA_SIZE;
 	struct VREG_RAW_TOP_DPCM_MODE            DPCM_MODE;
 	struct VREG_RAW_TOP_STVALID_STATUS       STVALID_STATUS;

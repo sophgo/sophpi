@@ -6,7 +6,7 @@
 #endif
 
 #include <linux/version.h>
-#if (KERNEL_VERSION(5, 10, 0) <= LINUX_VERSION_CODE)
+#if (LINUX_VERSION_CODE >= KERNEL_VERSION(5, 10, 0))
 #include <linux/time_types.h>
 #endif
 #include <linux/cvi_comm_vi.h>
@@ -74,18 +74,18 @@ enum VI_IOCTL {
 };
 
 enum VI_SDK_CTRL {
-	VI_SDK_SET_DEVATTR,
-	VI_SDK_GET_DEVATTR,
+	VI_SDK_SET_DEV_ATTR,
+	VI_SDK_GET_DEV_ATTR,
 	VI_SDK_ENABLE_DEV,
 	VI_SDK_DISABLE_DEV,
 	VI_SDK_CREATE_PIPE,
 	VI_SDK_DESTROY_PIPE,
-	VI_SDK_SET_PIPEATTR,
-	VI_SDK_GET_PIPEATTR,
+	VI_SDK_SET_PIPE_ATTR,
+	VI_SDK_GET_PIPE_ATTR,
 	VI_SDK_START_PIPE,
 	VI_SDK_STOP_PIPE,
-	VI_SDK_SET_CHNATTR,
-	VI_SDK_GET_CHNATTR,
+	VI_SDK_SET_CHN_ATTR,
+	VI_SDK_GET_CHN_ATTR,
 	VI_SDK_ENABLE_CHN,
 	VI_SDK_DISABLE_CHN,
 	VI_SDK_SET_MOTION_LV,
@@ -109,8 +109,6 @@ enum VI_SDK_CTRL {
 	VI_SDK_SET_CHN_LDC,
 	VI_SDK_ATTACH_VB_POOL,
 	VI_SDK_DETACH_VB_POOL,
-	VI_SDK_GET_PIPE_ATTR,
-	VI_SDK_SET_PIPE_ATTR,
 	VI_SDK_GET_PIPE_DUMP_ATTR,
 	VI_SDK_SET_PIPE_DUMP_ATTR,
 };
@@ -172,7 +170,7 @@ struct vi_event {
 	__u32			dev_id;
 	__u32			type;
 	__u32			frame_sequence;
-#if (KERNEL_VERSION(5, 10, 0) <= LINUX_VERSION_CODE)
+#if (LINUX_VERSION_CODE >= KERNEL_VERSION(5, 10, 0))
 	struct __kernel_timespec   timestamp;
 #else
 	struct timeval		timestamp;

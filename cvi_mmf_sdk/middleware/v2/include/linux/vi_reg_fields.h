@@ -2810,7 +2810,7 @@ union REG_RAW_TOP_RAW_BAYER_TYPE_TOPLEFT {
 	} bits;
 };
 
-union REG_RAW_TOP_RDMI_ENBALE {
+union REG_RAW_TOP_RDMI_ENABLE {
 	uint32_t raw;
 	struct {
 		uint32_t RDMI_EN                         : 1;

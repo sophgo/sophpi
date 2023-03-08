@@ -56,6 +56,7 @@ struct cvi_vo_ctx {
 		__u32 height;
 	} rect_crop;
 	__u8 u8VoDev;
+	CVI_BOOL bVideoFrameValid;
 };
 
 #ifdef __cplusplus

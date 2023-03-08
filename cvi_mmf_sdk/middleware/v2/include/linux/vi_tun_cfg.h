@@ -19,6 +19,7 @@ extern "C" {
 enum cvi_isp_raw {
 	ISP_PRERAW_A,
 	ISP_PRERAW_B,
+	ISP_PRERAW_C,
 	ISP_PRERAW_MAX,
 };
 
@@ -335,6 +336,7 @@ struct cvi_vip_isp_drc_config {
 	__u16 de_strth_gain;
 	__u8  be_strth_dshft;
 	__u16 be_strth_gain;
+	__u8  hdr_pattern;
 	struct cvi_isp_drc_tun_1_cfg drc_1_cfg;
 	struct cvi_isp_drc_tun_2_cfg drc_2_cfg;
 	struct cvi_isp_drc_tun_3_cfg drc_3_cfg;
@@ -1377,6 +1379,7 @@ struct cvi_vip_isp_preproc_config {
 	__s16 b_ir_ratio[128];
 	__u8  w_lut[128];
 };
+
 #endif
 
 struct cvi_vip_isp_fe_tun_cfg {

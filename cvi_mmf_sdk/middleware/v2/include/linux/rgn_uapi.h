@@ -6,7 +6,7 @@
 #endif
 
 #include <linux/version.h>
-#if (KERNEL_VERSION(5, 10, 0) <= LINUX_VERSION_CODE)
+#if (LINUX_VERSION_CODE >= KERNEL_VERSION(5, 10, 0))
 #include <linux/time_types.h>
 #endif
 
@@ -69,7 +69,7 @@ struct rgn_event {
 	__u32			dev_id;
 	__u32			type;
 	__u32			frame_sequence;
-#if (KERNEL_VERSION(5, 10, 0) <= LINUX_VERSION_CODE)
+#if (LINUX_VERSION_CODE >= KERNEL_VERSION(5, 10, 0))
 	struct __kernel_timespec   timestamp;
 #else
 	struct timeval		timestamp;

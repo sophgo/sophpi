@@ -338,7 +338,7 @@ typedef struct _VO_PM_OPS_S {
 typedef struct _VO_GAMMA_INFO_S {
 	CVI_BOOL enable;
 	CVI_BOOL osd_apply;
-	CVI_U32 value[VO_GAMMA_NODENUM];
+	CVI_U8 value[VO_GAMMA_NODENUM];
 } VO_GAMMA_INFO_S;
 
 typedef struct _VO_BIN_INFO_S {

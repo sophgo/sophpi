@@ -298,6 +298,7 @@ typedef enum _VI_DATA_TYPE_E {
 typedef struct _VI_WDR_ATTR_S {
 	WDR_MODE_E enWDRMode; /* RW; WDR mode.*/
 	CVI_U32 u32CacheLine; /* RW; WDR cache line.*/
+	CVI_BOOL bSyntheticWDR; /* RW; Synthetic WDR mode.*/
 } VI_WDR_ATTR_S;
 
 /* the extended attributes of VI device
