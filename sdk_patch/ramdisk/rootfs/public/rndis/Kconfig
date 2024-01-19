@@ -1,0 +1,5 @@
+config TARGET_PACKAGE_RNDIS
+	bool "Target rndis"
+	default n
+	help
+	  target rndis

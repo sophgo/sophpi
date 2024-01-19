@@ -1,0 +1,3 @@
+ifeq ($(CONFIG_TARGET_PACKAGE_RNDIS),y)
+TARGET_PACKAGES += rndis
+endif
