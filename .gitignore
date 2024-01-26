@@ -1,0 +1,12 @@
+build
+freertos
+fsbl
+host-tools
+isp_tuning
+linux_5.10
+middleware
+opensbi
+osdrv
+ramdisk
+u-boot-2021.10
+install
