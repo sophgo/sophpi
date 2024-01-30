@@ -14,4 +14,5 @@
     <project name="osdrv"/>
     <project name="ramdisk"/>
     <project name="u-boot-2021.10"/>
+    <project name="buildroot-2021.05"/>
 </manifest>
