@@ -21,7 +21,10 @@ if [[ $# -lt 2 ]]; then
 fi
 
 # 获取 User Name
-USERNAME=git
+function get_user_name {
+    USERNAME=$(git config --global user.name)
+}
+get_user_name
 
 # git clone enable
 DOWNLOAD=0
