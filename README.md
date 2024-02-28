@@ -5,9 +5,6 @@ cd sophpi
 ./scripts/repo_clone.sh --gitclone scripts/subtree.xml  
   
 step2:  
-cp sdk_patchs/* . -rpf  
-  
-step3:  
 source buile/cvisetup.sh  
 defconfig sg200x_duo_sd  
 clean_all  
