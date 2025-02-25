@@ -46,6 +46,29 @@ clean_all
 build_all
 ```
 
+## BM1688 & CV186AH SDK 编译步骤
+
+### 获取源码
+
+步骤一:
+
+``` bash
+mkdir -p <WORKSPACE>
+cd <WORKSPACE>
+git clone -b sg200x-evb git@github.com:sophgo/sophpi.git
+cd sophpi
+./scripts/repo_clone.sh --gitclone scripts/subtree_a2_release.xml
+```
+
+步骤二:
+
+``` bash
+source build/envsetup_soc.sh
+defconfig device_wevb_emmc
+clean_device_all
+build_device_all
+```
+
 # NOTE.
 
 TODO
@@ -64,3 +87,9 @@ TODO
 | 版本号  | 版本日期  | 版本更新内容                                      |
 | ------ | --------- | ------------------------------------------------ |
 | v4.2.6 | 2024.04.19 | TODO                                             |
+
+## BM1688 & CV186AH SDK 修订记录
+
+| 版本号  | 版本日期  | 版本更新内容                                      |
+| ------ | --------- | ------------------------------------------------ |
+| v1.9 | 2025.02.24 | 1.9 版本 a2_release SDK 发布                       |
