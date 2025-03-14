@@ -10,8 +10,7 @@
 mkdir -p <WORKSPACE>
 cd <WORKSPACE>
 git clone -b sg200x-evb git@github.com:sophgo/sophpi.git
-cd sophpi
-./scripts/repo_clone.sh --gitclone scripts/subtree.xml
+./sophpi/scripts/repo_clone.sh --gitclone sophpi/scripts/subtree.xml
 ```
 
 步骤二:
@@ -33,8 +32,7 @@ build_all
 mkdir -p <WORKSPACE>
 cd <WORKSPACE>
 git clone -b sg200x-evb git@github.com:sophgo/sophpi.git
-cd sophpi
-./scripts/repo_clone.sh --gitclone scripts/subtree_cv18xx-v4.2.x.xml
+./sophpi/scripts/repo_clone.sh --gitclone sophpi/scripts/subtree_cv18xx-v4.2.x.xml
 ```
 
 步骤二:
@@ -56,8 +54,7 @@ build_all
 mkdir -p <WORKSPACE>
 cd <WORKSPACE>
 git clone -b sg200x-evb git@github.com:sophgo/sophpi.git
-cd sophpi
-./scripts/repo_clone.sh --gitclone scripts/subtree_a2_release.xml
+./sophpi/scripts/repo_clone.sh --gitclone sophpi/scripts/subtree_a2_release.xml
 ```
 
 步骤二:
