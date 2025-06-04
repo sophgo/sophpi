@@ -66,6 +66,28 @@ clean_device_all
 build_device_all
 ```
 
+## CV184X SDK 编译步骤
+
+### 获取源码
+
+步骤一:
+
+``` bash
+mkdir -p <WORKSPACE>
+cd <WORKSPACE>
+git clone -b sg200x-evb git@github.com:sophgo/sophpi.git
+./sophpi/scripts/repo_clone.sh --gitclone sophpi/scripts/subtree_cv184x-v6.x.xml
+```
+
+步骤二:
+
+``` bash
+source build/cvisetup.sh
+defconfig cv1842cp_wevb_0015a_spinor
+clean_all
+build_all
+```
+
 # NOTE.
 
 TODO
@@ -90,3 +112,9 @@ TODO
 | 版本号  | 版本日期  | 版本更新内容                                      |
 | ------ | --------- | ------------------------------------------------ |
 | v1.9 | 2025.02.24 | 1.9 版本 a2_release SDK 发布                       |
+
+## CV184X SDK 修订记录
+
+| 版本号  | 版本日期  | 版本更新内容                                      |
+| ------ | --------- | ------------------------------------------------ |
+| v6.1.0 | 2025.05.30 | 6.1.0 版本 CV184X SDK 首次发布                       |
