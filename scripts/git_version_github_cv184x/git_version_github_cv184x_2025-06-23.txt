@@ -14,7 +14,7 @@ project_name: build
 commit_id: 8f96d66a20e73590184f81edffaaf25bcd65d459 build: weekly rls 2025.06.23
 
 project_name: SensorSupportList
-commit_id: 0d2085bd955ab46508676ef944770119c3b54462 无法进入仓库目录: /data/forum_service/songpei/sync/Mars3_dev_source/SensorSupportList
+commit_id: 60c4d048dd9fb1b0f86a27d68c1a4a21fbbc32a1 SensorSupportList: weekly rls 2025.06.23
 
 project_name: host-tools
 commit_id: b4c069a46a99433d79de9308f7c87591582e39fc host-tools: upload arm-none-linux-gnueabihf
