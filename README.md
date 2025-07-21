@@ -82,7 +82,7 @@ git clone -b sg200x-evb git@github.com:sophgo/sophpi.git
 步骤二:
 
 ``` bash
-source build/cvisetup.sh
+source build/envsetup_soc.sh
 defconfig cv1842cp_wevb_0015a_spinor
 clean_all
 build_all
@@ -119,3 +119,4 @@ TODO
 | ------ | --------- | ------------------------------------------------ |
 | v6.1.0 | 2025.05.30 | 6.1.0 版本 CV184X SDK 首次发布                       |
 | v6.2.0 | 2025.06.23 |  1. 支持单双系统：单系统Linux，双系统Linux+AliOS；2. 单双系统内存优化到128MB；3. 双系统快启；|
+| v6.2.1 | 2025.07.19 |  1. 双系统支持64bit工具链；2. 单系统模式下，小核默认使用FreeRTOS用于Audio 3A算法和osdc算法；3. 烧录工具支持分区大于4G；4. 提供cipher接口；5. PR2020支持AHD；6. YUV Sensor支持vi-vpss online；|

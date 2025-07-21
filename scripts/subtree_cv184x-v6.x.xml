@@ -20,5 +20,6 @@
     <project name="isp-tool-daemon"/>
     <project name="cvi_alios_open" path="cvi_alios"/>
     <project name="libsophon"/>
+    <project name="freertos"/>
 </manifest>
 
