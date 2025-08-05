@@ -21,5 +21,6 @@
     <project name="cvi_alios_open" path="cvi_alios"/>
     <project name="libsophon"/>
     <project name="freertos"/>
+    <project name="osal"/>
 </manifest>
 
