@@ -122,3 +122,4 @@ TODO
 | v6.2.1 | 2025.07.19 |  1. 双系统支持64bit工具链；2. 单系统模式下，小核默认使用FreeRTOS用于Audio 3A算法和osdc算法；3. 烧录工具支持分区大于4G；4. 提供cipher接口；5. PR2020支持AHD；6. YUV Sensor支持vi-vpss online；|
 | v6.2.2 | 2025.08.01 | 1. 修复部分bug，进一步开源代码；2. 单系统arm64工具链编译支持；3. 更新内存分配的变量命名：使用RTOS命名小核的内存分配变量；4. tpu raw12转int16前处理算子开发；5. jpeg支持sbm；6. TPU 膨胀、腐蚀算子支持；7. pqtool快启适配；8. 用户手册更新；|
 | v6.3.0 | 2025.08.29 | 1. 修复部分bug；2. 单系统环境下适配 rt-thread；3. 工具链变量名更新：3.1 musl → musl_arm 3.2 32bit → gibc_arm 3.3 64bit → glibc_arm64 4. AOV SDK版本开发，适配休眠唤醒功能；5. tpu raw12转int16前处理算子功能完善；6. 双系统支持应用崩溃后正常重跑；7. TDL完善越界检测功能；8. FB 驱动支持配置启用TDE旋转，90度，180度，270度；9. 用户手册更新；|
+| v6.3.1 | 2025.09.19 |  1. 修复部分bug；2. 适配 musl_arm64 工具链；3. 更新cvi_alios的customization pipeline从build目录配置的方式；4. 小核上支持I2C-recovery机制；5. TDL内存优化，对齐cv181x；6. 多媒体模块提供状态重置的接口；7. AOV优化，suspend在100ms以内，resume在30ms以内，修复部分bug；8. imx675 画质调试完成；9. 用户手册更新；|

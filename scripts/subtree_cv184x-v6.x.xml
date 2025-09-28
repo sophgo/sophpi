@@ -5,7 +5,6 @@
 
     <project name="host-tools" revision="master"/>
     <project name="build"/>
-    <project name="freertos"/>
     <project name="fsbl"/>
     <project name="u-boot-2021.10"/>
     <project name="linux_5.10"/>
