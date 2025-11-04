@@ -11,6 +11,7 @@
     <project name="middleware"/>
     <project name="isp" path="middleware/v2/modules/isp"/>
     <project name="isp_tuning"/>
+    <project name="isp-tool-daemon"/>
     <project name="ramdisk"/>
     <project name="fsbl"/>
     <project name="oss" revision="master"/>
@@ -18,6 +19,7 @@
     <project name="sophliteos" revision="A2"/>
     <project name="libsophon"/>
     <project name="libsophav" path="libsophon/libsophav" revision="main"/>
+    <project name="buildroot-2021.05" path="buildroot"/>
     <project name="bootloader-arm64" path="ubuntu/bootloader-arm64"/>
     <project name="sophon_media" revision="master"/>
     <project name="libsophav" path="sophon_media/libsophav" revision="main"/>

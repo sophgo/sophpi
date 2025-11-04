@@ -140,6 +140,7 @@ function git_pull {
         repo=$(echo "$line" | grep -o '<project name="[^"]*"' | sed 's/.*name="\([^"]*\)".*/\1/')
         revision=$(echo "$line" | grep -o 'revision="[^"]*"' | sed 's/.*revision="\([^"]*\)".*/\1/')
         path=$(echo "$line" | grep -o 'path="[^"]*"' | sed 's/.*path="\([^"]*\)".*/\1/')
+        sync=$(echo "$line" | grep -o 'sync-s="[^"]*"' | sed 's/.*sync-s="\([^"]*\)".*/\1/')
 
         # 判断参数是否匹配到project行
         if [[ -z $repo ]]; then
@@ -164,8 +165,23 @@ function git_pull {
         pushd $PWD/$path
             git checkout .
             git clean -f .
-            git reset --hard $REMOTE_NAME/$revision
-            git pull
+            git fetch $REMOTE_NAME --prune
+            # 判断 revision 是否为 commit-id（7~40位十六进制）
+            if [[ "$revision" =~ ^[0-9a-fA-F]{7,40}$ ]]; then
+                # 固定到指定提交（分离头指针）；固定提交无需 pull
+                git checkout --detach "$revision" || {
+                    echo -e "${RED}ERROR: Unable to checkout commit $revision for $repo${NC}";
+                }
+            else
+                # 认为是分支：切换/创建本地分支，硬重置到远端分支并拉取
+                git checkout "$revision" 2>/dev/null || git checkout -B "$revision" "$REMOTE_NAME/$revision"
+                git reset --hard "$REMOTE_NAME/$revision"
+                git pull "$REMOTE_NAME" "$revision"
+            fi
+            if [[ "$sync" == "true" ]]; then
+                git submodule sync
+                GIT_LFS_SKIP_SMUDGE=1 git submodule update --init
+            fi
         popd
     done < ${xml_file}
 }
