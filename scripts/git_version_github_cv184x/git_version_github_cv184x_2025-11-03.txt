@@ -47,7 +47,7 @@ project_name: u-boot-2021.10
 commit_id: 7bdd8a1f3a50e705ff7761d6fee193436f516d31 u-boot-2021.10: weekly rls 2025.11.03
 
 project_name: rt-thread
-commit_id: 37c670919405b706bd7aa34fdd14c33a8302aa16 rt-thread: weekly rls 2025.11.03
+commit_id: 7e76170b71a4d45e96977a0ab58ad4f6c8a49cec rt-thread: weekly rls 2025.12.08
 
 project_name: ramdisk
 commit_id: 053fbd4d0d32a60962b4674de89f38fa5bbfb8fd ramdisk: weekly rls 2025.11.03
