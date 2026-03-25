@@ -102,6 +102,7 @@ TODO
 | v4.1.6.1 | 2025.01.24 | tdl_sdk: 新增CVI_TDL_Set_ROI接口及yolov8模型<br>SensorSupportList: 修改gc2053_1l & gc2053_slave 的时钟模式|
 | v4.1.6.2 | 2025.11.03 | 1、新增cv1811ha_wevb_0007a_spinand, cv1811ca_wevb_0006a_spinor, cv1811ca_wevb_0006a_spinand_musl板级配置; 2、新增cv2002, soi_h65, sc231hai, sc4336p传感器驱动; 3、支持rt-thread SecureBoot;|
 | v4.1.6.3 | 2025.12.17 | 1、linux_5.10/tree/sg200x-dev/scripts/dtc/include-prefixes 软连接修复; 2、新增spinand F50L1G41LC-2P flash支持 3、新增AIC8800 wifi芯片支持 |
+| v4.1.6.4 | 2026.03.24 | 1、Sensor适配：新增GC2093双目、新增GC4683、新增SC535HAI; 2、Panel适配：新增BT656数据协议的MS7024驱动、新增RGB数据协议的GC9307驱动、新增ST7789P3驱动；3、Build适配：新增cv1812cpa_wevb_0006a_spinand_musl、cv1812cpa_wevb_0006a_emmc_musl板卡定义；4、Linux适配：新增UC25IQ128、GD25F128FSIGR的spinor flash驱动；5、Osdrv适配：新增双核通信rpmsg demo；6、Ramdisk适配：新增 USB ACM、USB NCM、DNSMASQ script；7、|
 
 ## V420 SDK 修订记录
 
@@ -126,7 +127,8 @@ TODO
 | v6.2.2 | 2025.08.01 | 1. 修复部分bug，进一步开源代码；2. 单系统arm64工具链编译支持；3. 更新内存分配的变量命名：使用RTOS命名小核的内存分配变量；4. tpu raw12转int16前处理算子开发；5. jpeg支持sbm；6. TPU 膨胀、腐蚀算子支持；7. pqtool快启适配；8. 用户手册更新；|
 | v6.3.0 | 2025.08.29 | 1. 修复部分bug；2. 单系统环境下适配 rt-thread；3. 工具链变量名更新：3.1 musl → musl_arm 3.2 32bit → gibc_arm 3.3 64bit → glibc_arm64 4. AOV SDK版本开发，适配休眠唤醒功能；5. tpu raw12转int16前处理算子功能完善；6. 双系统支持应用崩溃后正常重跑；7. TDL完善越界检测功能；8. FB 驱动支持配置启用TDE旋转，90度，180度，270度；9. 用户手册更新；|
 | v6.3.1 | 2025.09.19 |  1. 修复部分bug；2. 适配 musl_arm64 工具链；3. 更新cvi_alios的customization pipeline从build目录配置的方式；4. 小核上支持I2C-recovery机制；5. TDL内存优化，对齐cv181x；6. 多媒体模块提供状态重置的接口；7. AOV优化，suspend在100ms以内，resume在30ms以内，修复部分bug；8. imx675 画质调试完成；9. 用户手册更新；|
-| v6.3.2 | 2025.10.31 |   1. 修复部分bug：解决”IIC0_SCL//IIC0_SDA配置为rtt小核串口无法输出“问题等；2. 更新部分配置和文件命名：增加RTOS_LOGO_SIZE、更新cvi_alios中的芯片命名等；3. CV1841C系列板卡更名为CV1841CP，所有板卡配置默认ND；4. 所有模块使用CCF框架管理clk；5. 调整rootfs构建流程，并更新busybox：syslogd not ignore syslogd.conf；6. AOV优化，suspend在60ms以内，resume在30ms以内; |
-| v6.3.2.1 | 2025.12.18 | 1. 修复部分bug：解决vpss帧率控制异常、AHD热插拔、mjpeg cbr码率控制等问题。2. 添加部分功能：XT26G04D 等nand flash支持、ddr类型自适应、isp收敛耗时优化、clk管理优化等。; |
+| v6.3.2 | 2025.10.31 |   1. 修复部分bug：解决”IIC0_SCL//IIC0_SDA配置为rtt小核串口无法输出“问题等；2. 更新部分配置和文件命名：增加RTOS_LOGO_SIZE、更新cvi_alios中的芯片命名等；3. CV1841C系列板卡更名为CV1841CP，所有板卡配置默认ND；4. 所有模块使用CCF框架管理clk；5. 调整rootfs构建流程，并更新busybox：syslogd not ignore syslogd.conf；6. AOV优化，suspend在60ms以内，resume在30ms以内;|
+| v6.3.2.1 | 2025.12.18 | 1. 修复部分bug：解决vpss帧率控制异常、AHD热插拔、mjpeg cbr码率控制等问题。2. 添加部分功能：XT26G04D 等nand flash支持、ddr类型自适应、isp收敛耗时优化、clk管理优化等。;|
+| v6.3.3 | 2026.03.23 | 1. 修复部分bug：解决VI/VPSS onthefly高带宽溢出、3dnr stride对齐错误、WDR rawdump失败、raw_num_q满、audio track获取错误、madvise内核panic、ion内存释放失败、bmlib内存泄漏、OSD 1920通道启动失败、多传感器复位引脚冲突等问题；2. 添加部分功能：RTOS 3A配置支持、双系统AE调试、动态VI/VPSS scaler模式切换、NAND flash多款支持(XT26G04D/ZB35Q01CYIG/F50L1G41LC-2P)、MS7024 184x显示支持、venc proc_codec、bm_get_ion_mem_vaddr API、d2d功能、AE flicker检测、pqbin导出工具等；3. 优化部分：osal tasklet同步Linux语义、bm-smi重构优化、ISP初始化流程优化、cam0pll SSC支持等；|
 
 
