@@ -52,14 +52,8 @@ commit_id: 1603183d8faf31a7730308dc0323108e90cef37d rt-thread: weekly rls 2026.0
 project_name: ramdisk
 commit_id: eb8c417bc8d7ee2482a6e233bfb448f0ca6a61c2 ramdisk: weekly rls 2026.03.24
 
-project_name: kissfft
-commit_id: 7bce4153c6bc8aba2db0e889e576f9d00505cbe1 README.md: Tweak wording (#100)
-
 project_name: tdl_sdk
-commit_id: 95e53d7272dcb83fedb215350e90403720278b53 [fix] remove edge include cvi_rtsp.cmake
-
-project_name: sophpi
-commit_id: dabe410a9aca9980130abfa46c5ca23b0d994247 sophpi: weekly rls 2025.12.19
+commit_id: dc17ed5f81ae54ecd21d38f1a1dbff9851decb2a [fix] fix 180x compilation issues
 
 project_name: linux_5.10
 commit_id: 637760967797c6708bf8770557c7952f366d96fb linux_5.10: weekly rls 2026.03.24

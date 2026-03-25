@@ -15,7 +15,7 @@
     <project name="SensorSupportList" path="build/media/SensorSupportList"/>
     <project name="isp_tuning"/>
     <project name="ive"/>
-    <project name="tdl_sdk" revision="master"/>
+    <project name="tdl_sdk" revision="golden"/>
     <project name="cvi_rtsp"/>
     <project name="isp-tool-daemon"/>
     <project name="cvi_alios_open" path="cvi_alios"/>

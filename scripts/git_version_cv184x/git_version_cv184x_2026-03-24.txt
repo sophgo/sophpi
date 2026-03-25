@@ -4,11 +4,11 @@ commit_id: f4053955a4bb18868b3cb67084a5731d4d738e68 [fix](vi): don't update bypa
 project_name: osal
 commit_id: 10f0b4843cfcf074c23b52e9288195fbf585f798 [fix][osal] tasklet: synchronize with Linux tasklet_schedule semantics [description ]:           Implement atomic state checking in osal_tasklet_schedule() to match the           behavior of Linux kernel's tasklet_schedule() function:
 
+project_name: libsophon
+commit_id: 7dc4ccb2433f3efbd5d77b0d138df19efabbfde5 [fix](bmlib):fix bm_mem_mmap_device_mem_u64 interface
+
 project_name: cvi_rtsp
 commit_id: b95616f234a99c6f1d597eb46987106d254da3f2 [docs](cvi_rtsp):add LICENSE and README.md [description ]:NA [root   cause]:NA [JIRA      ID]:https://jira.sophgo.com/browse/CV184XSDK-593 [chip project]:cv184x [side effects]:NA [Affected *.ko/*.so/*.a] :NA
-
-project_name: TPU1686
-commit_id: 166723985ad9b9be74463040249b35d1f7e1349c [sg2260/sg2260e]:fix c2c reduce use sdma instead of vsdma in tpu-train
 
 project_name: cvi_alios
 commit_id: 9bc6cf3a8ea95b9745d4bdb7957d42c69d6f51b9 [fix](alios isp):fix alios cvi_bin build error [description ]:NA [root   cause]:NA [JIRA      ID]:https://jira.sophgo.com/browse/CV184XSDK-1039 [chip project]:cv184x [side effects]:NA [Affected *.ko/*.so/*.a]:NA
