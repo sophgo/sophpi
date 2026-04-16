@@ -77,8 +77,10 @@ while [[ $# -gt 0 ]]; do
 done
 
 # 设置全局变量
-REMOTE_NAME=$(grep -o '<remote.*/>' ${xml_file} | sed 's/.*name="\([^"]*\)".*/\1/')
-DEFAULT_REVISION=$(grep -o '<default.*/>' ${xml_file} | sed 's/.*revision="\([^"]*\)".*/\1/')
+if [[ -n "$xml_file" ]]; then
+    REMOTE_NAME=$(grep -o '<remote.*/>' ${xml_file} | sed 's/.*name="\([^"]*\)".*/\1/')
+    DEFAULT_REVISION=$(grep -o '<default.*/>' ${xml_file} | sed 's/.*revision="\([^"]*\)".*/\1/')
+fi
 PARAMETERS="--single-branch --depth 2000"
 
 # git clone function
@@ -90,6 +92,9 @@ function git_clone {
         revision=$(echo "$line" | grep -o 'revision="[^"]*"' | sed 's/.*revision="\([^"]*\)".*/\1/')
         path=$(echo "$line" | grep -o 'path="[^"]*"' | sed 's/.*path="\([^"]*\)".*/\1/')
         sync=$(echo "$line" | grep -o 'sync-s="[^"]*"' | sed 's/.*sync-s="\([^"]*\)".*/\1/')
+        remote_url=$(echo "$line" | grep -o 'remote_url="[^"]*"' | sed 's/.*remote_url="\([^"]*\)".*/\1/')
+        alias_name=$(echo "$line" | grep -o 'alias="[^"]*"' | sed 's/.*alias="\([^"]*\)".*/\1/')
+        soft_link=$(echo "$line" | grep -o 'soft_link="[^"]*"' | sed 's/.*soft_link="\([^"]*\)".*/\1/')
 
         # 判断参数是否匹配到project行
         if [[ -z $repo ]]; then
@@ -106,20 +111,37 @@ function git_clone {
             path=$repo
         fi
 
+        # 判断参数是否带有remote_url
+        if [[ -z $remote_url ]]; then
+            remote_url=$REMOTE_URL
+        fi
+
         # 判断是否已经下载了repo
         if [[ -d $PWD/$path ]]; then
             echo -e "${YELLOW}Warning: target porject already exist!! $PWD/$path${NC}"
             continue
         fi
 
-        # 判断参数是否带有normal
-        if [ $NORMAL == 0 ]; then
-            git clone $REMOTE_URL$repo.git $PWD/$path -b $revision $PARAMETERS
-        else
-            git clone $REMOTE_URL$repo.git $PWD/$path
+        # 判断参数是否带有normal，或者是否是commit-id（7~40位十六进制）
+        if [[ $NORMAL != 0 ]] || [[ "$revision" =~ ^[0-9a-fA-F]{7,40}$ ]]; then
+            GIT_LFS_SKIP_SMUDGE=1 git clone $remote_url$repo.git $PWD/$path
             pushd $PWD/$path
-                git checkout $revision
+                GIT_LFS_SKIP_SMUDGE=1 git checkout $revision
             popd
+        else
+            GIT_LFS_SKIP_SMUDGE=1 git clone $remote_url$repo.git $PWD/$path -b $revision $PARAMETERS
+        fi
+
+        # repo name 应该是 $repo 按 / 分割的最后一个元素
+        repo_name=$(echo $repo | awk -F '/' '{print $NF}')
+        # 判断参数是否带有alias_name
+        if ! [[ -z $alias_name ]]; then
+            repo_name=$alias_name
+        fi
+
+        # 如果有指定 path，且并非在当前目录下，并且指定了 soft_link == yes, 创建软连接
+        if [[ ! -z $path ]] && [[ $PWD/$path != $PWD/$repo_name ]] && [[ "$soft_link" == "yes" ]]; then
+            ln -s ./$path $repo_name
         fi
 
         # 判断参数是否带有sync-s
@@ -163,20 +185,20 @@ function git_pull {
         fi
 
         pushd $PWD/$path
-            git checkout .
-            git clean -f .
+            GIT_LFS_SKIP_SMUDGE=1 git checkout .
+            git clean -dfx .
             git fetch $REMOTE_NAME --prune
             # 判断 revision 是否为 commit-id（7~40位十六进制）
             if [[ "$revision" =~ ^[0-9a-fA-F]{7,40}$ ]]; then
                 # 固定到指定提交（分离头指针）；固定提交无需 pull
-                git checkout --detach "$revision" || {
+                GIT_LFS_SKIP_SMUDGE=1 git checkout --detach "$revision" || {
                     echo -e "${RED}ERROR: Unable to checkout commit $revision for $repo${NC}";
                 }
             else
                 # 认为是分支：切换/创建本地分支，硬重置到远端分支并拉取
-                git checkout "$revision" 2>/dev/null || git checkout -B "$revision" "$REMOTE_NAME/$revision"
-                git reset --hard "$REMOTE_NAME/$revision"
-                git pull "$REMOTE_NAME" "$revision"
+                GIT_LFS_SKIP_SMUDGE=1 git checkout "$revision" 2>/dev/null || GIT_LFS_SKIP_SMUDGE=1 git checkout -B "$revision" "$REMOTE_NAME/$revision"
+                GIT_LFS_SKIP_SMUDGE=1 git reset --hard "$REMOTE_NAME/$revision"
+                GIT_LFS_SKIP_SMUDGE=1 git pull "$REMOTE_NAME" "$revision"
             fi
             if [[ "$sync" == "true" ]]; then
                 git submodule sync
@@ -224,7 +246,23 @@ function reproduce_repo {
             continue
         fi
 
-        commit_id=$(get_commit_id $(basename ${repo}) ${gitver_txt})
+        # 判断gitver_txt是否未传入、不存在或不可读
+        if [[ -z "$gitver_txt" ]]; then
+            echo -e "${RED}ERROR: reproduce txt file is not specified${NC}"
+            exit 1
+        fi
+
+        if [[ ! -f "$gitver_txt" ]]; then
+            echo -e "${RED}ERROR: reproduce txt file does not exist: $gitver_txt${NC}"
+            exit 1
+        fi
+
+        if [[ ! -r "$gitver_txt" ]]; then
+            echo -e "${RED}ERROR: reproduce txt file is not readable: $gitver_txt${NC}"
+            exit 1
+        fi
+
+        commit_id=$(get_commit_id "$(basename "${repo}")" "${gitver_txt}")
 
         # 判断是否从txt中读取到commit_id
         if [[ -z $commit_id ]]; then
@@ -244,7 +282,7 @@ function reproduce_repo {
         fi
 
         pushd $PWD/$path
-            git reset --hard "${commit_id}" ||
+            GIT_LFS_SKIP_SMUDGE=1 git reset --hard "${commit_id}" ||
             {
                 echo "${RED}ERROR: Unable to reset to project ${repo}${NC}";
                 echo "${RED}ERROR: Unable to reset to commit ${commit_id}${NC}";

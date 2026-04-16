@@ -4,9 +4,6 @@ commit_id: 669486c32139bf5c990b74bbe311454f252c2263 [fix](vi): fix ai bnr dumpra
 project_name: cviruntime
 commit_id: 6e5214fbf6d02c3e1523fd52bb1e6df8f3bd9a1a add flag to get tensor without iomem
 
-project_name: tdl_sdk
-commit_id: a3e458738c7485a7be938a9391db9ba8b47d3be9 [fix] fix single alios compile error.
-
 project_name: freertos
 commit_id: c31e376252bed3d8b63e562427384ba4e850d9a5 [fix][rgn]fix rgn nullptr
 

@@ -4,9 +4,6 @@ commit_id: 8696196959d30c69fdddcdbdc8175967d863784c Merge "[build]:1811ca_wevb_0
 project_name: cviruntime
 commit_id: 74359e282737ee51e196bed2d8b54fa826487d7c add support for arm_musl
 
-project_name: tdl_sdk
-commit_id: a3e458738c7485a7be938a9391db9ba8b47d3be9 [fix] fix single alios compile error.
-
 project_name: freertos
 commit_id: c31e376252bed3d8b63e562427384ba4e850d9a5 [fix][rgn]fix rgn nullptr
 

@@ -4,9 +4,6 @@ commit_id: 596cf21a3ea5e6a66767e4d013f1a9455c34880f [fix](osdrv): modify rls_inf
 project_name: cviruntime
 commit_id: 6e5214fbf6d02c3e1523fd52bb1e6df8f3bd9a1a add flag to get tensor without iomem
 
-project_name: tdl_sdk
-commit_id: a3e458738c7485a7be938a9391db9ba8b47d3be9 [fix] fix single alios compile error.
-
 project_name: buildroot-2021.05
 commit_id: 2eac0a8c66ae5239eb54a2afa00da0e677f3ed4a [fix](buildroot): add link options for musl toochain
 
