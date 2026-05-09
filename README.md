@@ -102,13 +102,15 @@ TODO
 | v4.1.6.1 | 2025.01.24 | tdl_sdk: 新增CVI_TDL_Set_ROI接口及yolov8模型<br>SensorSupportList: 修改gc2053_1l & gc2053_slave 的时钟模式|
 | v4.1.6.2 | 2025.11.03 | 1、新增cv1811ha_wevb_0007a_spinand, cv1811ca_wevb_0006a_spinor, cv1811ca_wevb_0006a_spinand_musl板级配置; 2、新增cv2002, soi_h65, sc231hai, sc4336p传感器驱动; 3、支持rt-thread SecureBoot;|
 | v4.1.6.3 | 2025.12.17 | 1、linux_5.10/tree/sg200x-dev/scripts/dtc/include-prefixes 软连接修复; 2、新增spinand F50L1G41LC-2P flash支持 3、新增AIC8800 wifi芯片支持 |
-| v4.1.6.4 | 2026.03.24 | 1、Sensor适配：新增GC2093双目、新增GC4683、新增SC535HAI; 2、Panel适配：新增BT656数据协议的MS7024驱动、新增RGB数据协议的GC9307驱动、新增ST7789P3驱动；3、Build适配：新增cv1812cpa_wevb_0006a_spinand_musl、cv1812cpa_wevb_0006a_emmc_musl板卡定义；4、Linux适配：新增UC25IQ128、GD25F128FSIGR的spinor flash驱动；5、Osdrv适配：新增双核通信rpmsg demo；6、Ramdisk适配：新增 USB ACM、USB NCM、DNSMASQ script；7、|
+| v4.1.6.4 | 2026.03.24 | 1、Sensor适配：新增GC2093双目、新增GC4683、新增SC535HAI; 2、Panel适配：新增BT656数据协议的MS7024驱动、新增RGB数据协议的GC9307驱动、新增ST7789P3驱动；3、Build适配：新增cv1812cpa_wevb_0006a_spinand_musl、cv1812cpa_wevb_0006a_emmc_musl板卡定义；4、Linux适配：新增UC25IQ128、GD25F128FSIGR的spinor flash驱动；5、Osdrv适配：新增双核通信rpmsg demo；6、Ramdisk适配：新增 USB ACM、USB NCM、DNSMASQ script；|
+| v4.1.6.5 | 2026.05.08 | 1、全线产品（phobos/mars/mars3）新导入了几款KGD，型号如下：DDR_VENDOR_ESMT_N21_2G、DDR_VENDOR_ESMT_N19_4G、DDR_VENDOR_UNILC_N25_512M_DDR2、DDR_VENDOR_UNILC_N25_1G、DDR_VENDOR_UNILC_N21_2G、DDR_VENDOR_NY_N20_1G；|
 
 ## V420 SDK 修订记录
 
 | 版本号  | 版本日期  | 版本更新内容                                      |
 | ------ | --------- | ------------------------------------------------ |
 | v4.2.6 | 2024.04.19 | TODO                                             |
+| v4.2.0.1 | 2026.05.08 | 1、全线产品（phobos/mars/mars3）新导入了几款KGD，型号如下：DDR_VENDOR_ESMT_N21_2G、DDR_VENDOR_ESMT_N19_4G、DDR_VENDOR_UNILC_N25_512M_DDR2、DDR_VENDOR_UNILC_N25_1G、DDR_VENDOR_UNILC_N21_2G、DDR_VENDOR_NY_N20_1G；|
 
 ## BM1688 & CV186AH SDK 修订记录
 
@@ -131,5 +133,7 @@ TODO
 | v6.3.2 | 2025.10.31 |   1. 修复部分bug：解决”IIC0_SCL//IIC0_SDA配置为rtt小核串口无法输出“问题等；2. 更新部分配置和文件命名：增加RTOS_LOGO_SIZE、更新cvi_alios中的芯片命名等；3. CV1841C系列板卡更名为CV1841CP，所有板卡配置默认ND；4. 所有模块使用CCF框架管理clk；5. 调整rootfs构建流程，并更新busybox：syslogd not ignore syslogd.conf；6. AOV优化，suspend在60ms以内，resume在30ms以内;|
 | v6.3.2.1 | 2025.12.18 | 1. 修复部分bug：解决vpss帧率控制异常、AHD热插拔、mjpeg cbr码率控制等问题。2. 添加部分功能：XT26G04D 等nand flash支持、ddr类型自适应、isp收敛耗时优化、clk管理优化等。;|
 | v6.3.3 | 2026.03.23 | 1. 修复部分bug：解决VI/VPSS onthefly高带宽溢出、3dnr stride对齐错误、WDR rawdump失败、raw_num_q满、audio track获取错误、madvise内核panic、ion内存释放失败、bmlib内存泄漏、OSD 1920通道启动失败、多传感器复位引脚冲突等问题；2. 添加部分功能：RTOS 3A配置支持、双系统AE调试、动态VI/VPSS scaler模式切换、NAND flash多款支持(XT26G04D/ZB35Q01CYIG/F50L1G41LC-2P)、MS7024 184x显示支持、venc proc_codec、bm_get_ion_mem_vaddr API、d2d功能、AE flicker检测、pqbin导出工具等；3. 优化部分：osal tasklet同步Linux语义、bm-smi重构优化、ISP初始化流程优化、cam0pll SSC支持等；|
+| v6.3.3.1 | 2026.05.08 | 1、全线产品（phobos/mars/mars3）新导入了几款KGD，型号如下：DDR_VENDOR_ESMT_N21_2G、DDR_VENDOR_ESMT_N19_4G、DDR_VENDOR_UNILC_N25_512M_DDR2、DDR_VENDOR_UNILC_N25_1G、DDR_VENDOR_UNILC_N21_2G、DDR_VENDOR_NY_N20_1G；|
+
 
 
