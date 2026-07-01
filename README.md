@@ -104,6 +104,7 @@ TODO
 | v4.1.6.3 | 2025.12.17 | 1、linux_5.10/tree/sg200x-dev/scripts/dtc/include-prefixes 软连接修复; 2、新增spinand F50L1G41LC-2P flash支持 3、新增AIC8800 wifi芯片支持 |
 | v4.1.6.4 | 2026.03.24 | 1、Sensor适配：新增GC2093双目、新增GC4683、新增SC535HAI; 2、Panel适配：新增BT656数据协议的MS7024驱动、新增RGB数据协议的GC9307驱动、新增ST7789P3驱动；3、Build适配：新增cv1812cpa_wevb_0006a_spinand_musl、cv1812cpa_wevb_0006a_emmc_musl板卡定义；4、Linux适配：新增UC25IQ128、GD25F128FSIGR的spinor flash驱动；5、Osdrv适配：新增双核通信rpmsg demo；6、Ramdisk适配：新增 USB ACM、USB NCM、DNSMASQ script；|
 | v4.1.6.5 | 2026.05.08 | 1、全线产品新导入了几款KGD；|
+| v4.1.6.6 | 2026.06.30 | 1、Sensor适配：新增GC20C3；2、Build适配：新增cv1815j_wevb_0020a_*、cv1815ja_wevb_0020a_*板卡配置及ddr3_1600_x16选项；3、DDR/FSBL适配：CV1815J外挂DDR3 bringup、RX ODT设为120ohm；4、Flash/U-boot/Linux适配：新增spinand XT26G01F、nor ZB25VQ32D，u-boot支持flash_erased选项，linux修复nand ecc检测、新增nand polling获取status reg；5、Osdrv适配：VPSS新增duty_ratio；6、Ramdisk适配：支持WIFI AIC8800D80 & AIC8800DC；|
 
 ## V420 SDK 修订记录
 
@@ -111,6 +112,7 @@ TODO
 | ------ | --------- | ------------------------------------------------ |
 | v4.2.6 | 2024.04.19 | TODO                                             |
 | v4.2.0.1 | 2026.05.08 | 1、全线产品新导入了几款KGD；|
+| v4.2.1 | 2026.06.30 | 1、Sensor适配：新增GC4663、OS02H10、CV2005、TP9951、SC285SL、OS02G10，优化IMX675 AE控制；2、Panel/VO适配：新增RGB接口驱动、VPSS stitch送VPSS/VO/VENC、修复VO gamma设置概率性错误；3、Build适配：新增cv1815ja_wevb_0020a_*、cv1815j_wevb_0020a_*板卡配置及ddr3_1600_x16选项，新增musl arm编译修复Y2K38，修复mkubiimg/pack_prog_img；4、Flash/U-boot/Linux适配：新增XT26G01F、XT26G04CWSIGA、ZB35Q01CYIG、XT26G04D、F50L1G41LC-2P、GD25F128FSIGR、UC25IQ128、W25Q512JV等spinand/spinor支持，修复eMMC env保存、spacc hang、efuse读KEY失败、nand ecc检测；5、DDR/FSBL适配：CV1815J外挂DDR3 bringup、RX ODT 120ohm，新增ESMT/UniIC/Nanya等DDR vendor，修复eMMC clk div；6、Osdrv/Ramdisk适配：新增GT9xx触摸驱动、cvifb close保活、ipcm消息统计，修复PWM/ADC/clock_cooling suspend/resume，logrotate改为1h；7、Toolchain适配：新增musl arm64/arm32工具链(host-tools/cviruntime/oss/tdl_sdk)、opencv4.5静态库编译、新增curl；8、tdl_sdk：新增yolov11、yolov8 ROI、deepseek LLM交互、blip/yolo world v2、半身人脸识别；9、opensbi：支持CV181X/CV180X suspend/resume；|
 
 ## BM1688 & CV186AH SDK 修订记录
 
@@ -119,6 +121,7 @@ TODO
 | v1.9 | 2025.02.24 | 1.9 版本 a2_release SDK 发布                       |
 | v2.0 | 2025.06.25 | 1. 新增对传统PCIe模式SDK用法支持，API接口与SOC模式保持一致 2. 优化并简化了PCIE启动板卡流程 3. 边侧SDK新增buildroot文件系统 4. ffmpeg 新增实时对yuv叠图的硬件加速 5. 新增 NVMe/SATA SSD 支持​​：支持 SSD 挂载及 SSD 启动方式 6. 支持v4l2-ctl抓帧功能，并新增支持sensor: sc020hgs、sc233hgs、sc500ai 7. 优化 tpu-runtime​​：修复分辨率及超时相关问题，提升稳定性 8. 优化 DDR 代码​​：增强兼容性，适配更多硬件环境 9. 边侧buildroot支持OTA升级 10. 优化AI ISP，提升了AI ISP性能 11.增强Web端密码复杂度校验机制，提升系统安全性; |
 | v2.1 | 2025.11.25 | 1.优化休眠唤醒，支持深度休眠; 2.深度优化系统启动时间; 3.支持自动获取emmc容量并动态调整data分区大小; 4.完善ISP AF功能，支持自动对焦; 5.更新视频解码固件(r368959)，解决码流卡住问题 |
+| v2.2 | 2026.06.29 | 1.PCIE 模式下的多媒体API 新增多卡设备支持。2.加强稳定性，修复了一些已知问题和潜在缺陷。3. bm_opencv引入v4l2。4. 对齐主流roi设置方法，ffmpeg 和bmapi roi设置 使用坐标方式对外提供。5. 支持CPU DFS，在空闲时节省功耗。6.端侧支持ubuntu文件系统。7.支持pcie模式下的温控，ddr容量检测。8.完善对debian 12的支持。9.debian12系统的内核升级到6.12版本。10. OTA 支持 root-ro 与 root-rw 分区动态调整容量，两者总大小固定，且 root-ro 起始物理地址不变。11.bmcv新增TDE接口，支持用TDE硬件 crop、 resize 、csc 、rotate 、划线，画不规则图形。12.优化opencv算子，支持bmcv硬件加速。13.IVE算子由1920x1080支持到3840x2160。|
 
 ## CV184X SDK 修订记录
 
@@ -134,6 +137,7 @@ TODO
 | v6.3.2.1 | 2025.12.18 | 1. 修复部分bug：解决vpss帧率控制异常、AHD热插拔、mjpeg cbr码率控制等问题。2. 添加部分功能：XT26G04D 等nand flash支持、ddr类型自适应、isp收敛耗时优化、clk管理优化等。;|
 | v6.3.3 | 2026.03.23 | 1. 修复部分bug：解决VI/VPSS onthefly高带宽溢出、3dnr stride对齐错误、WDR rawdump失败、raw_num_q满、audio track获取错误、madvise内核panic、ion内存释放失败、bmlib内存泄漏、OSD 1920通道启动失败、多传感器复位引脚冲突等问题；2. 添加部分功能：RTOS 3A配置支持、双系统AE调试、动态VI/VPSS scaler模式切换、NAND flash多款支持(XT26G04D/ZB35Q01CYIG/F50L1G41LC-2P)、MS7024 184x显示支持、venc proc_codec、bm_get_ion_mem_vaddr API、d2d功能、AE flicker检测、pqbin导出工具等；3. 优化部分：osal tasklet同步Linux语义、bm-smi重构优化、ISP初始化流程优化、cam0pll SSC支持等；|
 | v6.3.3.1 | 2026.05.08 | 1、全线产品新导入了几款KGD；|
+| v6.3.4 | 2026.06.29 | 1. 新增仓库 PanelSupportList：屏支持列表统一管理（MIPI-TX/DSI、I80/LVDS），build/u-boot/cvi_mpi/cvi_alios 联动改造。2. 安全启动：fsbl+u-boot+ramdisk 新增 KERNEL_SECURE_BOOT 内核签名/解密、外部 blcp 2nd 签名、OTP key。3. SD-NAND/SD 启动与烧录进度 logo：fsbl、u-boot、build 全链路。4. RT-TOS yoc header：fsbl/rt-thread/build 联动加头部+CRC+0x40 偏移，flash 分区扩到 6M。5. AI ISP（teaisp）双系统：isp/isp_tuning/isp-tool-daemon/cvi_mpi/osdrv/cvi_alios 同步 BNR。6. ISP 新算法：在线 LSC 标定、AE fast converge attr/标定 API、AWB 调试点导出。7. 新存储器件：SPI-NAND XinCun/UM19C0HISW、SPI-NOR UC25IQ128。8. CPU/TPU OD：fsbl/build 新增 OverDrive 频率选择菜单。9. TDL/AI：新增 ADAS、yolo26、stereo、topformer seg motion 模型，SOT 可选 Kalman 跟踪。|
 
 
 

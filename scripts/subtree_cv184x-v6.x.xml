@@ -13,6 +13,7 @@
     <project name="oss" revision="master"/>
     <project name="cvi_mpi"/>
     <project name="SensorSupportList" path="build/media/SensorSupportList"/>
+    <project name="PanelSupportList" path="build/media/PanelSupportList"/>
     <project name="isp_tuning"/>
     <project name="ive"/>
     <project name="tdl_sdk" revision="golden"/>
