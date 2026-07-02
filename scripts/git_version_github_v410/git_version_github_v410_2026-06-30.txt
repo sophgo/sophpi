@@ -38,7 +38,7 @@ project_name: host-tools
 commit_id: 103c66f126fa98fcaa8b54f37fa06f6b293fd074 host-tools: upload Xuantie-900-gcc-elf-newlib-x86_64-V2.8.1
 
 project_name: oss
-commit_id: 2a48130226c06a2ad0dc303dc7d146da92cdfdd3 [feat](oss): add kissfft.tar.gz & kaldi-native-fbank.tar.gz tarball
+commit_id: a9b8282e46bcacb02cf2592c81ac4d5a58cb8e05 [fix](oss): add sqlite.tar.gz
 
 project_name: cnpy
 commit_id: 2f56f4c23ea840f9d15c43801368cf4a089efa84 [feat] cnpy opensource for cv18xx soc.
