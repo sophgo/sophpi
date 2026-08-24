@@ -105,6 +105,7 @@ TODO
 | v4.1.6.4 | 2026.03.24 | 1、Sensor适配：新增GC2093双目、新增GC4683、新增SC535HAI; 2、Panel适配：新增BT656数据协议的MS7024驱动、新增RGB数据协议的GC9307驱动、新增ST7789P3驱动；3、Build适配：新增cv1812cpa_wevb_0006a_spinand_musl、cv1812cpa_wevb_0006a_emmc_musl板卡定义；4、Linux适配：新增UC25IQ128、GD25F128FSIGR的spinor flash驱动；5、Osdrv适配：新增双核通信rpmsg demo；6、Ramdisk适配：新增 USB ACM、USB NCM、DNSMASQ script；|
 | v4.1.6.5 | 2026.05.08 | 1、全线产品新导入了几款KGD；|
 | v4.1.6.6 | 2026.06.30 | 1、Sensor适配：新增GC20C3；2、Build适配：新增cv1815j_wevb_0020a_*、cv1815ja_wevb_0020a_*板卡配置及ddr3_1600_x16选项；3、DDR/FSBL适配：CV1815J外挂DDR3 bringup、RX ODT设为120ohm；4、Flash/U-boot/Linux适配：新增spinand XT26G01F、nor ZB25VQ32D，u-boot支持flash_erased选项，linux修复nand ecc检测、新增nand polling获取status reg；5、Osdrv适配：VPSS新增duty_ratio；6、Ramdisk适配：支持WIFI AIC8800D80 & AIC8800DC；|
+| v4.1.6.7 | 2026.08.24 | 1、Sensor适配：新增IMGDS MIS4001、OV OS08C10传感器驱动，SC035HGS支持480P@180fps；2、Build适配：更新cv1815j/cv1815ja_wevb_0020a_*板卡config及sensor_list；3、DDR/FSBL适配：新增ddr3_1600_x16配置、补充LICENSE；4、Flash适配：u-boot/linux新增XinCun XCSP1AXPK-IT(1Gb/3.3V) SPI-NAND驱动；5、Osdrv适配：CV1815J纳入IS_CHIP_CV181X宏、VO相关修复；6、Ramdisk适配：新增musl版adbd；7、tdl_sdk：新增AeroEar声学无人机检测模型、手部关键点优化；8、ipcamera：集成AeroEar声学无人机检测、OS08C10 WDR支持；|
 
 ## V420 SDK 修订记录
 
@@ -113,6 +114,7 @@ TODO
 | v4.2.6 | 2024.04.19 | TODO                                             |
 | v4.2.0.1 | 2026.05.08 | 1、全线产品新导入了几款KGD；|
 | v4.2.1 | 2026.06.30 | 1、Sensor适配：新增GC4663、OS02H10、CV2005、TP9951、SC285SL、OS02G10，优化IMX675 AE控制；2、Panel/VO适配：新增RGB接口驱动、VPSS stitch送VPSS/VO/VENC、修复VO gamma设置概率性错误；3、Build适配：新增cv1815ja_wevb_0020a_*、cv1815j_wevb_0020a_*板卡配置及ddr3_1600_x16选项，新增musl arm编译修复Y2K38，修复mkubiimg/pack_prog_img；4、Flash/U-boot/Linux适配：新增XT26G01F、XT26G04CWSIGA、ZB35Q01CYIG、XT26G04D、F50L1G41LC-2P、GD25F128FSIGR、UC25IQ128、W25Q512JV等spinand/spinor支持，修复eMMC env保存、spacc hang、efuse读KEY失败、nand ecc检测；5、DDR/FSBL适配：CV1815J外挂DDR3 bringup、RX ODT 120ohm，新增ESMT/UniIC/Nanya等DDR vendor，修复eMMC clk div；6、Osdrv/Ramdisk适配：新增GT9xx触摸驱动、cvifb close保活、ipcm消息统计，修复PWM/ADC/clock_cooling suspend/resume，logrotate改为1h；7、Toolchain适配：新增musl arm64/arm32工具链(host-tools/cviruntime/oss/tdl_sdk)、opencv4.5静态库编译、新增curl；8、tdl_sdk：新增yolov11、yolov8 ROI、deepseek LLM交互、blip/yolo world v2、半身人脸识别；9、opensbi：支持CV181X/CV180X suspend/resume；|
+| v4.2.2 | 2026.08.24 | 1、Sensor适配：新增OV4683/OV4689传感器驱动（cvi_mpi及cvi_alios双系统）；2、Panel/VO适配：新增DSI屏ST7102_480x854、LVDS屏G101JL-S04_1024x600 bringup，cvi_alios修复I80接口bug；3、Build适配：更新cv1815j/cv1815ja_wevb_0020a_*板卡config、移除ddr_auto_x16选项、更新sensor_list；4、DDR/FSBL适配：新增ddr3_1600_x16配置、CV1815J外挂DDR3写GP_REG3=0x1815、补充LICENSE；5、Flash/U-boot/Linux适配：新增XinCun XCSP1AXPK-IT、DS35Q4GB-IB、W25N04LV等SPI-NAND支持，efuse新增CV181X-AUX0芯片判定；6、Osdrv/cvi_alios适配：新增CV1815J外挂DDR板卡芯片ID、修复CV1835误判、PWM使能前恢复REG_PERIOD/HLPERIOD、cvifb close保活；|
 
 ## BM1688 & CV186AH SDK 修订记录
 
