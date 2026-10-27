@@ -5,6 +5,7 @@
 
     <project name="host-tools" revision="master"/>
     <project name="build" path="build"/>
+    <project name="ipcamera" revision="cv18xx-v4.2.x"/>
     <project name="fsbl" path="fsbl"/>
     <project name="opensbi" path="opensbi"/>
     <project name="u-boot-2021.10" path="u-boot-2021.10"/>
