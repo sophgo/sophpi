@@ -1,0 +1,189 @@
+project_name: cvi_osdrv
+commit_id: 9cffe3341edc2b43fee88c31aefe89e99bc4b6a6 Merge "[fix](cvi_osdrv): athena2 sdk release rule"
+
+project_name: trusted-firmware-a
+commit_id: 3a848421c1814ebebd6b7806f26a4218056e7f77 [fix](trusted-firmware-a): change DDR_CFG default to ddr_auto
+
+project_name: libsophav
+commit_id: d7078b5c70ebf86544dfc113375474608aa280d1 Merge "[fix](libsophav): athena2 sdk release rule"
+
+project_name: tpu-bmodel (fetch)
+commit_id: 9fbdcba4247078c095a97652a43d76f96513c19e [feat] support cdma insruction
+
+project_name: tpu-common (fetch)
+commit_id: 45b7d390ee5782b77b60484383ab5de5b8e0c00a Parse version from git tag
+
+project_name: tpu-runtime (fetch)
+commit_id: 00ecb83377742af401c2c9490fd241ad422da1fb [feat] support cdma  and multi device  for cv84x6
+
+project_name: bmodel-zoo (fetch)
+commit_id: c9220367caf5d54be746aa5d075e616ece23d779 just change the net name of abc-combined bmodel, to be distinguished from other abs models
+
+project_name: tpu-debugger (fetch)
+commit_id: eee2e96e60d9591cb6cebf0fb8feee68217ceb22 feat: support using the parent project’s toolchain to build this project
+
+project_name: libsophon
+commit_id: 1b3c8c626ca8dd104376e850426b4ee3b4ca5c89 Merge "[fix](libsophon): athena2 sdk release rule" into a2_dev
+
+project_name: tpu-cpuop (fetch)
+commit_id: c75bea095a8df9664c2797edf79e036f92e0965c feature: MLIR-951 tpu-cpuop compile feature for haikang demand not in win32
+
+project_name: sophgo-develop-docs
+commit_id: ac0f0bb64ee7ee81771f3587bcebda537f9ed3eb doc: athena2: update source acquisition for 2.3
+
+project_name: kissfft
+commit_id: 7bce4153c6bc8aba2db0e889e576f9d00505cbe1 README.md: Tweak wording (#100)
+
+project_name: kissfft
+commit_id: 7bce4153c6bc8aba2db0e889e576f9d00505cbe1 README.md: Tweak wording (#100)
+
+project_name: kissfft
+commit_id: 7bce4153c6bc8aba2db0e889e576f9d00505cbe1 README.md: Tweak wording (#100)
+
+project_name: libsophav
+commit_id: d7078b5c70ebf86544dfc113375474608aa280d1 Merge "[fix](libsophav): athena2 sdk release rule"
+
+project_name: sophon_media
+commit_id: 872ce11a2b948d149d9f36c6196d8fe8066a4869 Merge "[fix](sophon_media): athena2 sdk release rule"
+
+project_name: isp
+commit_id: cf7c63de5ff7a716041c66c5981408365be9b90a [fix](isp): athena2 sdk release rule
+
+project_name: SensorSupportList
+commit_id: caa96d3d2724164fda9d1148cec61dd700761dc4 Merge "[fix](cvitek/SensorSupportList): athena2 sdk release rule"
+
+project_name: cvi_middleware
+commit_id: 474957485210d085126bcd072ce3bcc1c2bb0afd [fix](cvi_middleware): athena2 sdk release rule
+
+project_name: testcases
+commit_id: e9d79c27ad94decad287d3c54c9ba5fe8ef5a7f4 [fix](a2_edge): '$!' variable only stores the PID of the most recent direct background process.
+
+project_name: cvi_rtsp
+commit_id: c93b35eeefc353d6e84bdca1ba2ebd1aad2cbd7e [fix](cvi_rtsp): athena2 sdk release rule
+
+project_name: linux-common
+commit_id: 6d1d2833f8f6ec7a94c80a5c5293e7b3b6406749 [fix](linux-common): athena2 sdk release rule
+
+project_name: buildroot-2021.05
+commit_id: f6c7ff84c38b83ce1ca248f508c13fdd47d009c2 [fix](cvitek/buildroot-2021.05): athena2 sdk release rule
+
+project_name: cvi_build
+commit_id: 97d2432d4eefb8e7a22fd2a8ebf5aa705004ba01 Merge "[fix](cvi_build): athena2 sdk release rule"
+
+project_name: cvi_manifest (fetch)
+commit_id: c3fc74328afdeffdaa05c904a36b22609518678e [feat](phobosX):add release_v5_3.1.0.1 tag
+
+project_name: mediapipe
+commit_id: c2dccec70e3bcfca062153fe8bf5e045b00ef3dc [fix](mediapipe):fix four_horiz_stitch.ini
+
+project_name: host-tools
+commit_id: 2405b251f6aa63248b6c537a1fddf64eb550e8eb [feat](toolchain): build with gdb [description ]:NA [root   cause]:NA [JIRA      ID]:NA [chip project]:NA [side effects]:NA [Affected *.ko/*.so/*.a] :NA
+
+project_name: googletest
+commit_id: e2239ee6043f73722e7aa812a459f54a28552929 Googletest export
+
+project_name: eigen
+commit_id: c86165651f02c52df3b5783b50353f992fb40d94 initial commit
+
+project_name: stb
+commit_id: af1a5bc352164740c1cc1354942b1c6b72eacb8a Update bug_report.md
+
+project_name: thttpd
+commit_id: 1bf87adea1646993112451aa9a06301049bbed58 add wasm mime_type to support webAssembly
+
+project_name: flatbuffers
+commit_id: 6da1cf79d90eb242e7da5318241d42279a3df3ba [rust] Add use declarations to Rust-generated bindings for imported FB definitions (#5645)
+
+project_name: libuv
+commit_id: 4a2b2ec91101c08e80a4a25b11c8d674bb5d9002 Add libuv 1.44.1
+
+project_name: curl
+commit_id: dfead1a100864868760cd4337875077727617ef0 [feat] add curl v8.2.1 release. [source] https://curl.se/download/curl-8.2.1.tar.gz No local changes.  Only extracted official release.
+
+project_name: nanomsg (fetch)
+commit_id: cc19ff68b68ebf9d6a2940b31bad23669ebfa403 Revert "fixes #997 Windows IPC Assertion failed: !self->pipesendbuf"
+
+project_name: json-c
+commit_id: dc1ef7d566e0857bb10772e9048198ba46bd1485 Merge pull request #718 from Pawday/master
+
+project_name: cvi-miniz
+commit_id: e532ee97053e7d63f5f97d70c79975430b7fcd3b push source code modify by Evan.zhao 	base on miniz
+
+project_name: nlohmannjson
+commit_id: de080a1a1af4f540501cb5cd708848aabcd99585 initial commit
+
+project_name: cvi-json-c
+commit_id: 99e117d3367f142ed09b703302e440f59c6a3cda remove functions from unused macro definition
+
+project_name: fsck
+commit_id: 7853b17092b899f65e0568dee09820526d84db82 [description ]: fsck tool changed to support sd card with 64GB or larger size [root cause  ]: NA [mantis id   ]: NA [chip project]: NA [confirm test]: NA [side effects]: delete some functions which will allocate large memory
+
+project_name: ffmpeg
+commit_id: 650912c9f4f7857229f73274957b9d99bef4a74b Merge "Add fsync option before close fd"
+
+project_name: miniz
+commit_id: 61a5a68e72461a79b751043eda6eff9b66bf5616 push source code
+
+project_name: openssl
+commit_id: 7bbdb5b7895b5e30a98ef81d6818f779dc59f2da Remove openssl submodules
+
+project_name: oss
+commit_id: f081db00868e7a85ac88ac4abaa9778df7ea70ff [feat](rootfs): add musl arm64 toolchain [description ]:NA [root   cause]:NA [JIRA      ID]:NA [chip project]:NA [side effects]:NA [Affected *.ko/*.so/*.a] :NA
+
+project_name: glog
+commit_id: 42efa4f5447bfd58dc11f356b234658078737e46 [SYSLOG] update syslog channel from user to local6
+
+project_name: opencv
+commit_id: a7160afbc998471dd4bd089ab1430dbd3171ee89 [uclibc] replace -O3 options with -O2 -Os when build with uclibc
+
+project_name: sqlite3
+commit_id: 601f3b084eaaac76e95bdd87fab1c9a9482da5c2 import sqlite3 as 20200918 download release tarball
+
+project_name: opencv (fetch)
+commit_id: f4e3ffb5d5355619f10fea38ba73205e1afc6f92 [uclibc] replace -O3 options with -O2 -Os when build with uclibc
+
+project_name: zlib
+commit_id: e827145fbbe6773408dc7601ef1d063442bed2b9 import zlib 1.2.11
+
+project_name: libwebsockets
+commit_id: 9bf0ae38c86e3d3d6c9bf1e40addaf0384142769 mirror from v4.1-stable (https://github.com/warmcat/libwebsockets.git)
+
+project_name: live555
+commit_id: 11357247c36fc600df52735d5ed9e4da606d3a1d add CFLAGS into COMPILE_OPTS
+
+project_name: isp_tuning
+commit_id: 8129a08cf01c308a636512991cd82b4a37486836 [fix](isp_tuning): athena2 sdk release rule
+
+project_name: isp-tool-daemon
+commit_id: 387dba8ad04ebff6a8b26e41fdf7c7987f26c9de [fix](cvitek/isp-tool-daemon): athena2 sdk release rule
+
+project_name: nvr_edge
+commit_id: 72425412913c6cac2da6487b0f6887f51d314717 [RELEASE] 2.7.3
+
+project_name: opensbi-common
+commit_id: e54b8c12acb41ef601d62f02fc9b51039af69d4d support c906 for a2
+
+project_name: u-boot-2021.10
+commit_id: 70f07d70a56006ed0690e935a15e4ff445b6882b [fix](u-boot-2021.10): athena2 sdk release rule
+
+project_name: bootloader-arm64
+commit_id: 84b58678121597f5765e5212f86443faac676d4d [fix](bootloader-arm64): athena2 sdk release rule
+
+project_name: ipcamera
+commit_id: 3791a2656e7087237608a6255a06a0dd198c66b9 [fix](framework/ipcamera): athena2 sdk release rule
+
+project_name: cvi_ramdisk
+commit_id: 6f4ef3da8d92165a7b02a3d66af5b0e4991c8ed8 [fix](cvi_ramdisk): athena2 sdk release rule
+
+project_name: pytest
+commit_id: 2add60782676c3600585de066a9159f3b7174c0e test(multimedia): chip0/chip1 对称测试集 + 双 chip 并行 runner
+
+project_name: kissfft
+commit_id: 7bce4153c6bc8aba2db0e889e576f9d00505cbe1 README.md: Tweak wording (#100)
+
+project_name: tdl_sdk
+commit_id: ebddbfc3c002a76b306d890bdac6d0b05e78e1c9 [fix](cvitek/tdl_sdk): athena2 sdk release rule
+
+project_name: linux_5.10
+commit_id: 9c3015102f06821cd73d59364ae9994a4b52d8f4 Merge "[fix](linux_5.10): athena2 sdk release rule"
+
