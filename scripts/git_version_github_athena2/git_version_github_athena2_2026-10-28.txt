@@ -1,0 +1,90 @@
+project_name: osdrv
+commit_id: 8af52a45a3181eb33f1f44b33061ccb9b33f4979 cvi_osdrv: weekly rls 2026.10.27
+
+project_name: trusted-firmware-a
+commit_id: f400bf1712dd5c3fa95d97d2f3a949c064e68fb7 trusted-firmware-a: weekly rls 2026.10.27
+
+project_name: libsophav
+commit_id: 809342d60361639678cd3d033ccca296176699a6 libsophav: weekly rls 2026.10.27
+
+project_name: libsophon
+commit_id: d30537c9d38007e078d438d46d6aa305f5ed9c71 libsophon: weekly rls 2026.10.27
+
+project_name: kissfft
+commit_id: 7bce4153c6bc8aba2db0e889e576f9d00505cbe1 README.md: Tweak wording (#100)
+
+project_name: kissfft
+commit_id: 7bce4153c6bc8aba2db0e889e576f9d00505cbe1 README.md: Tweak wording (#100)
+
+project_name: libsophav
+commit_id: 809342d60361639678cd3d033ccca296176699a6 libsophav: weekly rls 2026.10.27
+
+project_name: sophon_media
+commit_id: 0822d9b766e2da649531fe543d7146be791daf26 sophon_media: weekly rls 2026.10.27
+
+project_name: isp
+commit_id: 690eb161242f76b5c62502557be9e46f4e7fd830 isp: weekly rls 2026.10.27
+
+project_name: SensorSupportList
+commit_id: 5e14ad53325814f28798f54367accc90e19c47b7 SensorSupportList: weekly rls 2026.10.27
+
+project_name: middleware
+commit_id: 557074baa02078496576c17082219128c0d791c4 middleware: drop flattened SensorSupportList, use standalone repo
+
+project_name: cvi_rtsp
+commit_id: d8bb41f07f197afe1652e9774a154dcd5c7f9bda cvi_rtsp: weekly rls 2026.10.27
+
+project_name: linux-common
+commit_id: 9dc5054c4375d27c4d7ffd85b0cdbbe0aab99cf8 linux-common: weekly rls 2026.10.27
+
+project_name: buildroot-2021.05
+commit_id: a58f754209cae940ea49c6dd60edbd4d53e8901f buildroot-2021.05: weekly rls 2026.10.27
+
+project_name: build
+commit_id: dc6c2c0f65736589fdaa61fb365726e441dcc757 cvi_build: weekly rls 2026.10.27
+
+project_name: host-tools
+commit_id: 103c66f126fa98fcaa8b54f37fa06f6b293fd074 host-tools: upload Xuantie-900-gcc-elf-newlib-x86_64-V2.8.1
+
+project_name: oss
+commit_id: a9b8282e46bcacb02cf2592c81ac4d5a58cb8e05 [fix](oss): add sqlite.tar.gz
+
+project_name: isp_tuning
+commit_id: 78c619e2a121bdb5d312557601835342236cf140 isp_tuning: weekly rls 2026.10.27
+
+project_name: isp-tool-daemon
+commit_id: e3974477839a9b88ff42dd93bd301f31267dbca5 isp-tool-daemon: weekly rls 2026.10.27
+
+project_name: fsbl
+commit_id: 95572b3adb929cfc0501927194aa65f6cc719d51 Revert "[fix](fsbl): disable mcu after reboot to stop retrain [description ]:NA [root cause]:NA [JIRA ID]:NA [chip project]:NA [side effects]:NA [Affected *.ko/*.so/*.a] :NA"
+
+project_name: SensorSupportList
+commit_id: 794a36638a7622a78518e785c6e33dcd3a3594c4 SensorSupportList: weekly rls 2026.10.23
+
+project_name: u-boot-2021.10
+commit_id: 04ef04e10acd8b8efc649d2eafc61c1cc6a7d498 u-boot-2021.10: weekly rls 2026.10.27
+
+project_name: bootloader-arm64
+commit_id: 70021fd1e710fba30cc3cc98aca2e9a0d6d55b4d bootloader-arm64: weekly rls 2026.10.27
+
+project_name: ipcamera
+commit_id: 98fe009fc5aaf006a160db26dc393b0c5635f461 ipcamera: weekly rls 2026.10.27
+
+project_name: ramdisk
+commit_id: 8430932085dc3a83a5ffe66477ede8f517443352 cvi_ramdisk: weekly rls 2026.10.27
+
+project_name: kissfft
+commit_id: 7bce4153c6bc8aba2db0e889e576f9d00505cbe1 README.md: Tweak wording (#100)
+
+project_name: kissfft
+commit_id: 7bce4153c6bc8aba2db0e889e576f9d00505cbe1 README.md: Tweak wording (#100)
+
+project_name: tdl_sdk
+commit_id: e7a1ca4cda0714d53dd3a8398a4f6ad6dd61d073 tdl_sdk: weekly rls 2026.10.27
+
+project_name: sophpi
+commit_id: 71c326ca1b8c0cc993a9cff2e6bab3f68e9a6198 sophpi: xml include ipcamera
+
+project_name: linux_5.10
+commit_id: ee3d4aab62aa0415b8a65051e93d4407bc3d8a1c linux_5.10: weekly rls 2026.10.27
+
