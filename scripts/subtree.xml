@@ -18,6 +18,7 @@
     <project name="oss" revision="master"/>
     <project name="cvi_rtsp"/>
     <project name="cvi_mpi"/>
+    <project name="isp" path="cvi_mpi/modules/isp"/>
     <project name="isp_tuning"/>
     <project name="SensorSupportList" path="cvi_mpi/component/isp"/>
     <project name="cvibuilder" path="cvibuilder"/>

@@ -106,6 +106,7 @@ TODO
 | v4.1.6.5 | 2026.05.08 | 1、全线产品新导入了几款KGD；|
 | v4.1.6.6 | 2026.06.30 | 1、Sensor适配：新增GC20C3；2、Build适配：新增cv1815j_wevb_0020a_*、cv1815ja_wevb_0020a_*板卡配置及ddr3_1600_x16选项；3、DDR/FSBL适配：CV1815J外挂DDR3 bringup、RX ODT设为120ohm；4、Flash/U-boot/Linux适配：新增spinand XT26G01F、nor ZB25VQ32D，u-boot支持flash_erased选项，linux修复nand ecc检测、新增nand polling获取status reg；5、Osdrv适配：VPSS新增duty_ratio；6、Ramdisk适配：支持WIFI AIC8800D80 & AIC8800DC；|
 | v4.1.6.7 | 2026.08.24 | 1、Sensor适配：新增IMGDS MIS4001、OV OS08C10传感器驱动，SC035HGS支持480P@180fps；2、Build适配：更新cv1815j/cv1815ja_wevb_0020a_*板卡config及sensor_list；3、DDR/FSBL适配：新增ddr3_1600_x16配置、补充LICENSE；4、Flash适配：u-boot/linux新增XinCun XCSP1AXPK-IT(1Gb/3.3V) SPI-NAND驱动；5、Osdrv适配：CV1815J纳入IS_CHIP_CV181X宏、VO相关修复；6、Ramdisk适配：新增musl版adbd；7、tdl_sdk：新增AeroEar声学无人机检测模型、手部关键点优化；8、ipcamera：集成AeroEar声学无人机检测、OS08C10 WDR支持；|
+| v4.1.6.8 | 2026.10.28 | 1、Sensor适配：新增CVSENS CV4005传感器驱动，GC2093 Slave支持2M@60fps；2、Build适配：rework build_rtt（基于EVB板卡派生combo参数）、更新sensor_list；3、DDR/FSBL适配：新增SPI-NAND raw-read单镜像boot0路径、导入Etron N20 2Gb DDR3 KGD；4、Flash/U-boot/Linux适配：u-boot新增cvi_update_rtt RTT NAND烧录命令、NOR/NAND support list同步Mars3/v632（新增BY25FQ256ES SPI-NOR、UM19A1HISW SPI-NAND）；5、Osdrv适配：VI新增err irq retry、VENC RequestIDR bypass通道ioctl信号量、RGN/VPSS canvas地址in-use检查防use-after-free；6、ipcamera：新增AI PD（行人检测）& MD（移动侦测）；7、cvi_mpi：audio线程dump路径加固；|
 
 ## V420 SDK 修订记录
 

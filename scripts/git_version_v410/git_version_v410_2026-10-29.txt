@@ -1,0 +1,153 @@
+project_name: osdrv
+commit_id: 9571d8b4f1c0755d0daa4ea7251c48678eb7c5b4 Merge "[feat](vi): add err irq retry times" into v4.1.0
+
+project_name: cviruntime
+commit_id: a28b16d6b406f370c74b033cc2c56f0fb6d1652e [fix](cviruntime): v410 release info update
+
+project_name: buildroot-2021.05
+commit_id: 2eac0a8c66ae5239eb54a2afa00da0e677f3ed4a [fix](buildroot): add link options for musl toochain
+
+project_name: freertos
+commit_id: c31e376252bed3d8b63e562427384ba4e850d9a5 [fix][rgn]fix rgn nullptr
+
+project_name: cvi_rtsp
+commit_id: 1548873cc7baa670d581dd7897b7a5617c5459c0 Revert "[fix](cvi_rtsp):change condition for source of live555.tar.gz"
+
+project_name: flatbuffers
+commit_id: 6da1cf79d90eb242e7da5318241d42279a3df3ba [rust] Add use declarations to Rust-generated bindings for imported FB definitions (#5645)
+
+project_name: cvibuilder
+commit_id: 4ec46e8c0e4072d4c05904221fc4d4a9f260a1a5 add tensor size
+
+project_name: cvikernel
+commit_id: ce607f8a3c2661a1abecad9b20a69eb5ae4774fb set lookup_interp_table layer_id
+
+project_name: opensbi
+commit_id: 3d536719a07aaca98d441ed5daffdced9e285351 [fix](opensbi): modify rls_info.txt
+
+project_name: build
+commit_id: 7779180807c9d89a4889cee754bb55c54e40e391 feat(build): rework build_rtt to combo args derived from EVB boards
+
+project_name: cvi_manifest (fetch)
+commit_id: d774cef979b3f6fcaf6ce2c1f25915587e0db4bf [feat](xml): front add phobox_alios xml
+
+project_name: googletest
+commit_id: e2239ee6043f73722e7aa812a459f54a28552929 Googletest export
+
+project_name: eigen
+commit_id: c86165651f02c52df3b5783b50353f992fb40d94 initial commit
+
+project_name: stb
+commit_id: af1a5bc352164740c1cc1354942b1c6b72eacb8a Update bug_report.md
+
+project_name: thttpd
+commit_id: 1bf87adea1646993112451aa9a06301049bbed58 add wasm mime_type to support webAssembly
+
+project_name: flatbuffers
+commit_id: 6da1cf79d90eb242e7da5318241d42279a3df3ba [rust] Add use declarations to Rust-generated bindings for imported FB definitions (#5645)
+
+project_name: libuv
+commit_id: 4a2b2ec91101c08e80a4a25b11c8d674bb5d9002 Add libuv 1.44.1
+
+project_name: curl
+commit_id: dfead1a100864868760cd4337875077727617ef0 [feat] add curl v8.2.1 release. [source] https://curl.se/download/curl-8.2.1.tar.gz No local changes.  Only extracted official release.
+
+project_name: nanomsg (fetch)
+commit_id: cc19ff68b68ebf9d6a2940b31bad23669ebfa403 Revert "fixes #997 Windows IPC Assertion failed: !self->pipesendbuf"
+
+project_name: json-c
+commit_id: dc1ef7d566e0857bb10772e9048198ba46bd1485 Merge pull request #718 from Pawday/master
+
+project_name: cvi-miniz
+commit_id: e532ee97053e7d63f5f97d70c79975430b7fcd3b push source code modify by Evan.zhao 	base on miniz
+
+project_name: nlohmannjson
+commit_id: de080a1a1af4f540501cb5cd708848aabcd99585 initial commit
+
+project_name: cvi-json-c
+commit_id: 99e117d3367f142ed09b703302e440f59c6a3cda remove functions from unused macro definition
+
+project_name: fsck
+commit_id: 7853b17092b899f65e0568dee09820526d84db82 [description ]: fsck tool changed to support sd card with 64GB or larger size [root cause  ]: NA [mantis id   ]: NA [chip project]: NA [confirm test]: NA [side effects]: delete some functions which will allocate large memory
+
+project_name: ffmpeg
+commit_id: 650912c9f4f7857229f73274957b9d99bef4a74b Merge "Add fsync option before close fd"
+
+project_name: miniz
+commit_id: 61a5a68e72461a79b751043eda6eff9b66bf5616 push source code
+
+project_name: openssl
+commit_id: 7bbdb5b7895b5e30a98ef81d6818f779dc59f2da Remove openssl submodules
+
+project_name: oss
+commit_id: f081db00868e7a85ac88ac4abaa9778df7ea70ff [feat](rootfs): add musl arm64 toolchain [description ]:NA [root   cause]:NA [JIRA      ID]:NA [chip project]:NA [side effects]:NA [Affected *.ko/*.so/*.a] :NA
+
+project_name: glog
+commit_id: 42efa4f5447bfd58dc11f356b234658078737e46 [SYSLOG] update syslog channel from user to local6
+
+project_name: opencv
+commit_id: a7160afbc998471dd4bd089ab1430dbd3171ee89 [uclibc] replace -O3 options with -O2 -Os when build with uclibc
+
+project_name: sqlite3
+commit_id: 601f3b084eaaac76e95bdd87fab1c9a9482da5c2 import sqlite3 as 20200918 download release tarball
+
+project_name: opencv (fetch)
+commit_id: f4e3ffb5d5355619f10fea38ba73205e1afc6f92 [uclibc] replace -O3 options with -O2 -Os when build with uclibc
+
+project_name: zlib
+commit_id: e827145fbbe6773408dc7601ef1d063442bed2b9 import zlib 1.2.11
+
+project_name: libwebsockets
+commit_id: 9bf0ae38c86e3d3d6c9bf1e40addaf0384142769 mirror from v4.1-stable (https://github.com/warmcat/libwebsockets.git)
+
+project_name: live555
+commit_id: 11357247c36fc600df52735d5ed9e4da606d3a1d add CFLAGS into COMPILE_OPTS
+
+project_name: cnpy
+commit_id: 05f09a5309b6ed7884af2d7274135d547ee9d84e v230 aarch64 musl
+
+project_name: isp_tuning
+commit_id: 0257493dfa9d1dff603a49c9bd0b0c916a200263 [fix](isp): update PQ parameters [description ]:NA [root   cause]:NA [JIRA      ID]:CV180X181X-3711 [chip project]:ALL [side effects]:NA [Affected *.ko/*.so/*.a]:NA
+
+project_name: ive
+commit_id: 9bf0559b9ce1173b722beaba0ec5da57ff52b35b [fix](ive): modify rls_info.txt
+
+project_name: fsbl
+commit_id: 35cabeaf856b09a89cc4a56880eb280a3a9cdcb2 [fix](fsbl): v410 release info update
+
+project_name: cvimath
+commit_id: 4aedd4806ddbb9cfda3ee0f0a2e2b500469e8967 remove fenv.h when useing arm toolchain
+
+project_name: u-boot-2021.10
+commit_id: ea3faf2220205e29b5350cbe283a592a17ae5ffb [fix](u-boot-2021.10): v410 release info update
+
+project_name: ipcamera
+commit_id: 54bf19b186d318a7e45502de721c62b7ab364fda [feat](AI): PD & MD
+
+project_name: ramdisk
+commit_id: 1af856360cc9586d32f5be63fdc655a32936b6ee [fix](ramdisk): v410 release info update
+
+project_name: kissfft
+commit_id: 7bce4153c6bc8aba2db0e889e576f9d00505cbe1 README.md: Tweak wording (#100)
+
+project_name: kissfft
+commit_id: 7bce4153c6bc8aba2db0e889e576f9d00505cbe1 README.md: Tweak wording (#100)
+
+project_name: tdl_sdk
+commit_id: ebddbfc3c002a76b306d890bdac6d0b05e78e1c9 [fix](cvitek/tdl_sdk): athena2 sdk release rule
+
+project_name: linux_5.10
+commit_id: ea487d9a2060255867349d7985ce8b9b0055277a [feat](flash): sync NOR/NAND support list with Mars3/v632
+
+project_name: isp
+commit_id: a71cf2d74242dd430b6282286b7a49926033b00c [fix](isp): v410 release info update
+
+project_name: mediapipe
+commit_id: 29b536962af0d132dbaf62723dec9d2f2d924364 [fix](mediapipe)fix vo intfSync param takes no effect.
+
+project_name: SensorSupportList
+commit_id: ae17981392fe6bc51f7ddc2be77b1491cb997597 Merge "[feat](sensor):support cv4005 and mis4001" into v4.1.0
+
+project_name: cvi_mpi
+commit_id: f446404cfebc72afaab33c3b7b0fd6b786d868a8 [fix](cvi_mpi): v410 release info update
+
