@@ -1,11 +1,11 @@
 project_name: cvi_osdrv
-commit_id: 9cffe3341edc2b43fee88c31aefe89e99bc4b6a6 Merge "[fix](cvi_osdrv): athena2 sdk release rule"
+commit_id: 4d40b20aa16f78c04c708de6c032af800632257f [fix](cvi_osdrv): athena2 2d_engine release objects per board
 
 project_name: trusted-firmware-a
 commit_id: 3a848421c1814ebebd6b7806f26a4218056e7f77 [fix](trusted-firmware-a): change DDR_CFG default to ddr_auto
 
 project_name: libsophav
-commit_id: d7078b5c70ebf86544dfc113375474608aa280d1 Merge "[fix](libsophav): athena2 sdk release rule"
+commit_id: 82c0582e690553d8df0cc2aeea640e8ba90fa9c4 [84x6][tpu] fix pyramid/rotate bug
 
 project_name: tpu-bmodel (fetch)
 commit_id: 9fbdcba4247078c095a97652a43d76f96513c19e [feat] support cdma insruction
@@ -23,7 +23,7 @@ project_name: tpu-debugger (fetch)
 commit_id: eee2e96e60d9591cb6cebf0fb8feee68217ceb22 feat: support using the parent project’s toolchain to build this project
 
 project_name: libsophon
-commit_id: 1b3c8c626ca8dd104376e850426b4ee3b4ca5c89 Merge "[fix](libsophon): athena2 sdk release rule" into a2_dev
+commit_id: 4999962c1bf47b45db965da57b60dd0bd2d3955c driver/84x6: queue C906 mailbox commands
 
 project_name: tpu-cpuop (fetch)
 commit_id: c75bea095a8df9664c2797edf79e036f92e0965c feature: MLIR-951 tpu-cpuop compile feature for haikang demand not in win32
@@ -41,7 +41,7 @@ project_name: kissfft
 commit_id: 7bce4153c6bc8aba2db0e889e576f9d00505cbe1 README.md: Tweak wording (#100)
 
 project_name: libsophav
-commit_id: d7078b5c70ebf86544dfc113375474608aa280d1 Merge "[fix](libsophav): athena2 sdk release rule"
+commit_id: 82c0582e690553d8df0cc2aeea640e8ba90fa9c4 [84x6][tpu] fix pyramid/rotate bug
 
 project_name: sophon_media
 commit_id: 872ce11a2b948d149d9f36c6196d8fe8066a4869 Merge "[fix](sophon_media): athena2 sdk release rule"
@@ -50,7 +50,7 @@ project_name: isp
 commit_id: cf7c63de5ff7a716041c66c5981408365be9b90a [fix](isp): athena2 sdk release rule
 
 project_name: SensorSupportList
-commit_id: caa96d3d2724164fda9d1148cec61dd700761dc4 Merge "[fix](cvitek/SensorSupportList): athena2 sdk release rule"
+commit_id: 33edf6c80c4af20eebe88cca51029b7a070c7346 [fix](cvitek/SensorSupportList): add gc05a3 to athena2 release list
 
 project_name: cvi_middleware
 commit_id: 474957485210d085126bcd072ce3bcc1c2bb0afd [fix](cvi_middleware): athena2 sdk release rule
@@ -68,10 +68,10 @@ project_name: buildroot-2021.05
 commit_id: f6c7ff84c38b83ce1ca248f508c13fdd47d009c2 [fix](cvitek/buildroot-2021.05): athena2 sdk release rule
 
 project_name: cvi_build
-commit_id: 97d2432d4eefb8e7a22fd2a8ebf5aa705004ba01 Merge "[fix](cvi_build): athena2 sdk release rule"
+commit_id: f60992a9ccbe91c9eadf40f6e7fa21d83b7d6b1c [fix](cvi_build): athena2 fip ddr firmware and upgrade pack errors
 
 project_name: cvi_manifest (fetch)
-commit_id: c3fc74328afdeffdaa05c904a36b22609518678e [feat](phobosX):add release_v5_3.1.0.1 tag
+commit_id: 040265e8922edf5a5177367638581950b18aff97 [feat](rtt): add rtt_dev.xml
 
 project_name: mediapipe
 commit_id: c2dccec70e3bcfca062153fe8bf5e045b00ef3dc [fix](mediapipe):fix four_horiz_stitch.ini
@@ -185,5 +185,5 @@ project_name: tdl_sdk
 commit_id: ebddbfc3c002a76b306d890bdac6d0b05e78e1c9 [fix](cvitek/tdl_sdk): athena2 sdk release rule
 
 project_name: linux_5.10
-commit_id: 9c3015102f06821cd73d59364ae9994a4b52d8f4 Merge "[fix](linux_5.10): athena2 sdk release rule"
+commit_id: 75e6993a7975b6ac70c1f5e042151c8914bfed8a [fix](nvmem): 84x6-otp: resume preempted SMC
 

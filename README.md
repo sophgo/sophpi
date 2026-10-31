@@ -125,7 +125,7 @@ TODO
 | v2.0 | 2025.06.25 | 1. 新增对传统PCIe模式SDK用法支持，API接口与SOC模式保持一致 2. 优化并简化了PCIE启动板卡流程 3. 边侧SDK新增buildroot文件系统 4. ffmpeg 新增实时对yuv叠图的硬件加速 5. 新增 NVMe/SATA SSD 支持​​：支持 SSD 挂载及 SSD 启动方式 6. 支持v4l2-ctl抓帧功能，并新增支持sensor: sc020hgs、sc233hgs、sc500ai 7. 优化 tpu-runtime​​：修复分辨率及超时相关问题，提升稳定性 8. 优化 DDR 代码​​：增强兼容性，适配更多硬件环境 9. 边侧buildroot支持OTA升级 10. 优化AI ISP，提升了AI ISP性能 11.增强Web端密码复杂度校验机制，提升系统安全性; |
 | v2.1 | 2025.11.25 | 1.优化休眠唤醒，支持深度休眠; 2.深度优化系统启动时间; 3.支持自动获取emmc容量并动态调整data分区大小; 4.完善ISP AF功能，支持自动对焦; 5.更新视频解码固件(r368959)，解决码流卡住问题 |
 | v2.2 | 2026.06.29 | 1.PCIE 模式下的多媒体API 新增多卡设备支持。2.加强稳定性，修复了一些已知问题和潜在缺陷。3. bm_opencv引入v4l2。4. 对齐主流roi设置方法，ffmpeg 和bmapi roi设置 使用坐标方式对外提供。5. 支持CPU DFS，在空闲时节省功耗。6.端侧支持ubuntu文件系统。7.支持pcie模式下的温控，ddr容量检测。8.完善对debian 12的支持。9.debian12系统的内核升级到6.12版本。10. OTA 支持 root-ro 与 root-rw 分区动态调整容量，两者总大小固定，且 root-ro 起始物理地址不变。11.bmcv新增TDE接口，支持用TDE硬件 crop、 resize 、csc 、rotate 、划线，画不规则图形。12.优化opencv算子，支持bmcv硬件加速。13.IVE算子由1920x1080支持到3840x2160。|
-| v2.3 | 2026.10.27 | 1. 升级 TF-A（trusted-firmware-a），替换 fsbl；2. 支持 LPDDR4x（bm1688/cv186ah）；3. 优化打包环境，不依赖 root 权限与 docker；4. 边侧（bm1688/cv186ah）支持 AB 双分区 OTA；5. 多媒体通路适配：vdec / venc / jpeg / vpss / HDMI；6. VPSS 新增 syscap / sc_avg 硬件耗时统计；7. venc / vdec 新增基于 MMU 的跨 4G 内存访问；|
+| v2.3 | 2026.10.31 | 1. 升级 TF-A（trusted-firmware-a），替换 fsbl；2. 支持 LPDDR4x（bm1688/cv186ah）；3. 优化打包环境，不依赖 root 权限与 docker；4. 边侧（bm1688/cv186ah）支持 AB 双分区 OTA；5. 多媒体通路适配：vdec / venc / jpeg / vpss / HDMI；6. VPSS 新增 syscap / sc_avg 硬件耗时统计；7. venc / vdec 新增基于 MMU 的跨 4G 内存访问；8. 新增 device_88a2_wevb_spinand / device_88a2_wevb_spinor 板卡编译支持，2D 驱动预编译对象按板卡提供；9. PCIe 模式 JPEG 支持多卡；10. 修复 SE13 NVMe SSD 无法识别，新增 eth ephy reset GPIO pinmux；|
 
 ## CV184X SDK 修订记录
 
