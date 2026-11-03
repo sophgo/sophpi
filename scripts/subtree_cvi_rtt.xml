@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="origin" fetch="git@github.com:sophgo/" review="git@github.com:sophgo/"/>
+    <default revision="master" remote="origin" sync-j="4" clone-depth="1"/>
+
+    <project name="rt-thread" revision="release_rtt_v530"/>
+    <project name="cvi_rtt" path="rt-thread/cvi_rtt"/>
+    <project name="osal" path="rt-thread/cvi_rtt/osal"/>
+    <project name="SensorSupportList" path="rt-thread/components/cvi_comps/SensorSupportList"/>
+    <project name="PanelSupportList" path="rt-thread/components/cvi_comps/PanelSupportList"/>
+    <project name="host-tools" path="rt-thread/host-tools"/>
+</manifest>

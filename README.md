@@ -88,6 +88,28 @@ clean_all
 build_all
 ```
 
+## CVI_RTT SDK 编译步骤
+
+### 获取源码
+
+步骤一:
+
+``` bash
+mkdir -p <WORKSPACE>
+cd <WORKSPACE>
+git clone -b sg200x-evb git@github.com:sophgo/sophpi.git
+./sophpi/scripts/repo_clone.sh --gitclone sophpi/scripts/subtree_cvi_rtt.xml
+```
+
+步骤二:
+
+``` bash
+cd rt-thread/cvi_rtt
+source envsetup.sh
+defconfig smart_doorbell_turnkey_180xb
+build_all
+```
+
 # NOTE.
 
 TODO
@@ -142,3 +164,9 @@ TODO
 | v6.3.3 | 2026.03.23 | 1. 修复部分bug：解决VI/VPSS onthefly高带宽溢出、3dnr stride对齐错误、WDR rawdump失败、raw_num_q满、audio track获取错误、madvise内核panic、ion内存释放失败、bmlib内存泄漏、OSD 1920通道启动失败、多传感器复位引脚冲突等问题；2. 添加部分功能：RTOS 3A配置支持、双系统AE调试、动态VI/VPSS scaler模式切换、NAND flash多款支持(XT26G04D/ZB35Q01CYIG/F50L1G41LC-2P)、MS7024 184x显示支持、venc proc_codec、bm_get_ion_mem_vaddr API、d2d功能、AE flicker检测、pqbin导出工具等；3. 优化部分：osal tasklet同步Linux语义、bm-smi重构优化、ISP初始化流程优化、cam0pll SSC支持等；|
 | v6.3.3.1 | 2026.05.08 | 1、全线产品新导入了几款KGD；|
 | v6.3.4 | 2026.06.29 | 1. 新增仓库 PanelSupportList：屏支持列表统一管理（MIPI-TX/DSI、I80/LVDS），build/u-boot/cvi_mpi/cvi_alios 联动改造。2. 安全启动：fsbl+u-boot+ramdisk 新增 KERNEL_SECURE_BOOT 内核签名/解密、外部 blcp 2nd 签名、OTP key。3. SD-NAND/SD 启动与烧录进度 logo：fsbl、u-boot、build 全链路。4. RT-TOS yoc header：fsbl/rt-thread/build 联动加头部+CRC+0x40 偏移，flash 分区扩到 6M。5. AI ISP（teaisp）双系统：isp/isp_tuning/isp-tool-daemon/cvi_mpi/osdrv/cvi_alios 同步 BNR。6. ISP 新算法：在线 LSC 标定、AE fast converge attr/标定 API、AWB 调试点导出。7. 新存储器件：SPI-NAND XinCun/UM19C0HISW、SPI-NOR UC25IQ128。8. CPU/TPU OD：fsbl/build 新增 OverDrive 频率选择菜单。9. TDL/AI：新增 ADAS、yolo26、stereo、topformer seg motion 模型，SOT 可选 Kalman 跟踪。|
+
+## CVI_RTT SDK 修订记录
+
+| 版本号  | 版本日期  | 版本更新内容                                      |
+| ------ | --------- | ------------------------------------------------ |
+| v5.3.0 | 2026.11.03 | 1. CVI_RTT（RT-Thread）SDK 首次发布，支持 CV181x / CV180x；2. 新增仓库 cvi_rtt、osal，rt-thread 使用 release_rtt_v530 分支；3. 提供 smart_doorbell、mpi_sample、mpi_ut、tdl_samples、peripherals_test、cv18xx_boot 等 solution；4. SensorSupportList、PanelSupportList 接入 RT-Thread 编译；|

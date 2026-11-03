@@ -1,0 +1,18 @@
+project_name: cvi_manifest (fetch)
+commit_id: 040265e8922edf5a5177367638581950b18aff97 [feat](rtt): add rtt_dev.xml
+
+project_name: rt-thread
+commit_id: ed339475b130b0b314c3e6109a739dae91b8f5db [fix](release): generate rls_info.txt in byte order on every host
+
+project_name: PanelSupportList
+commit_id: 3dc215fe2e66a92e185533792c62efce3bc55c6a feat(build): add RT-Thread SConscript for in-tree integration
+
+project_name: SensorSupportList
+commit_id: 1a25e664e3beb7100c7ed4d530f07de15e8a9fa7 [fix](SensorSupportList): support SC2336P
+
+project_name: osal
+commit_id: 26e4df41217c139deb7f7618da0f8df0b0f88109 Merge "[feat]: Do not print when clk is NULL."
+
+project_name: cvi_rtt
+commit_id: 1b05a998be0b6e4757d1f3b0b5ee2d2807593437 [fix](release): generate rls_info.txt in byte order on every host
+

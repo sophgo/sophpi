@@ -1,0 +1,21 @@
+project_name: host-tools
+commit_id: 103c66f126fa98fcaa8b54f37fa06f6b293fd074 host-tools: upload Xuantie-900-gcc-elf-newlib-x86_64-V2.8.1
+
+project_name: rt-thread
+commit_id: b43e4e96e50f8095e8dc400218e95281405b42ab rt-thread: weekly rls 2026.11.03
+
+project_name: PanelSupportList
+commit_id: 9a5f3d36cb1487676d63223089d000b1eb32f841 PanelSupportList: weekly rls 2026.11.03
+
+project_name: SensorSupportList
+commit_id: 7f930857baad5df947bcddd5b16c3430f23aa599 SensorSupportList: weekly rls 2026.11.03
+
+project_name: osal
+commit_id: dfd7694e0bfd0b072934beda165b17948340f038 osal: weekly rls 2026.11.03
+
+project_name: cvi_rtt
+commit_id: 2d761aa90f5fcf43aadec4987695d51840c77a74 cvi_rtt: weekly rls 2026.11.03
+
+project_name: sophpi
+commit_id: 80c6547f1ca491333edbb2a204be382d92d7d925 sophpi: weekly rls 2026.10.31
+
