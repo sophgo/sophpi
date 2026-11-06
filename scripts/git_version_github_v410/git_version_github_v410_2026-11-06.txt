@@ -32,7 +32,7 @@ project_name: opensbi
 commit_id: 6766e9cc96df51cde91540f9a15f291bf843b682 opensbi: weekly rls 2025.01.24
 
 project_name: build
-commit_id: 0c104cba79d3d80d644527eaf052b35c0f33b41c build: weekly rls 2026.10.28
+commit_id: 99fb8c22b7995b26cd438858ae8219c342d380fb build: weekly rls 2026.11.06
 
 project_name: host-tools
 commit_id: 103c66f126fa98fcaa8b54f37fa06f6b293fd074 host-tools: upload Xuantie-900-gcc-elf-newlib-x86_64-V2.8.1
@@ -50,7 +50,7 @@ project_name: ive
 commit_id: d39861011a8da11c68470af4155d7e121c8df32e ive: weekly rls 2025.01.17
 
 project_name: fsbl
-commit_id: 9876d6e6b105a594aa42fc895ec34f7f8927230d fsbl: weekly rls 2026.10.28
+commit_id: 5a80c127cf614dea7f534d5b5352886a1c720d37 fsbl: weekly rls 2026.11.06
 
 project_name: cvimath
 commit_id: ce8705f49da5e5f59c2ddb3253ef88323a0cd9c4 [feat] cvimath opensource for cv18xx soc.
@@ -74,13 +74,13 @@ project_name: tdl_sdk
 commit_id: e7a1ca4cda0714d53dd3a8398a4f6ad6dd61d073 tdl_sdk: weekly rls 2026.10.27
 
 project_name: sophpi
-commit_id: e9b2aeb1f504e0701653dbb540c917f3f2643520 sophpi: update git_version_github_athena2 snapshot to 2026-10-28
+commit_id: ce50039eb6d57443ee662ee414647c8938da8750 sophpi: weekly rls 2026.11.03
 
 project_name: linux_5.10
 commit_id: 2d84ae43387525b7b05e68d158445dd4b1b11d5a linux_5.10: weekly rls 2026.10.28
 
 project_name: isp
-commit_id: 584cdacac54ec4a4392eb53e3b91714e0fec20fe isp: weekly rls 2026.10.28
+commit_id: 7af7cb69fec353b92a8b94dcb4f802ee6da73890 isp: weekly rls 2026.11.06
 
 project_name: SensorSupportList
 commit_id: b77f304241ed7ec920eeca3fe9a3c0ffd59009a0 SensorSupportList: weekly rls 2026.10.28

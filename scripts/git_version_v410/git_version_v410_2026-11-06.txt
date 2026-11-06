@@ -2,7 +2,7 @@ project_name: osdrv
 commit_id: 9571d8b4f1c0755d0daa4ea7251c48678eb7c5b4 Merge "[feat](vi): add err irq retry times" into v4.1.0
 
 project_name: cviruntime
-commit_id: a28b16d6b406f370c74b033cc2c56f0fb6d1652e [fix](cviruntime): v410 release info update
+commit_id: 05f3802d506d3cec0beeec327b2f0764022e44e1 [fix](cviruntime): v410 release info update
 
 project_name: buildroot-2021.05
 commit_id: 2eac0a8c66ae5239eb54a2afa00da0e677f3ed4a [fix](buildroot): add link options for musl toochain
@@ -26,10 +26,10 @@ project_name: opensbi
 commit_id: 3d536719a07aaca98d441ed5daffdced9e285351 [fix](opensbi): modify rls_info.txt
 
 project_name: build
-commit_id: 7779180807c9d89a4889cee754bb55c54e40e391 feat(build): rework build_rtt to combo args derived from EVB boards
+commit_id: ea8217f3392318900f19e96d66dab2411be6a17a [fix](build): v410 release info update
 
 project_name: cvi_manifest (fetch)
-commit_id: d774cef979b3f6fcaf6ce2c1f25915587e0db4bf [feat](xml): front add phobox_alios xml
+commit_id: 040265e8922edf5a5177367638581950b18aff97 [feat](rtt): add rtt_dev.xml
 
 project_name: googletest
 commit_id: e2239ee6043f73722e7aa812a459f54a28552929 Googletest export
@@ -113,7 +113,7 @@ project_name: ive
 commit_id: 9bf0559b9ce1173b722beaba0ec5da57ff52b35b [fix](ive): modify rls_info.txt
 
 project_name: fsbl
-commit_id: 35cabeaf856b09a89cc4a56880eb280a3a9cdcb2 [fix](fsbl): v410 release info update
+commit_id: 910917d4befba19366170837d7167756c1f63c5b [feat](bl2): init GIC for NS EL1 before jumping to RT-Thread loader
 
 project_name: cvimath
 commit_id: 4aedd4806ddbb9cfda3ee0f0a2e2b500469e8967 remove fenv.h when useing arm toolchain
@@ -140,7 +140,7 @@ project_name: linux_5.10
 commit_id: ea487d9a2060255867349d7985ce8b9b0055277a [feat](flash): sync NOR/NAND support list with Mars3/v632
 
 project_name: isp
-commit_id: a71cf2d74242dd430b6282286b7a49926033b00c [fix](isp): v410 release info update
+commit_id: c10e9491617f8837ae45ecb6e8b248d275aac450 [fix](isp): v410 release info update
 
 project_name: mediapipe
 commit_id: 29b536962af0d132dbaf62723dec9d2f2d924364 [fix](mediapipe)fix vo intfSync param takes no effect.
