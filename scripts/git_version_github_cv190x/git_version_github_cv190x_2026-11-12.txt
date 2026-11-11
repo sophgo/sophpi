@@ -1,0 +1,81 @@
+project_name: osdrv
+commit_id: 1029dc18970c141de47051442eb15ae0183b9bdf osdrv: weekly rls 2026.11.12
+
+project_name: osal
+commit_id: 8a22cf0d2ed9636e89c4f634a1069183f4838ab6 osal: weekly rls 2026.11.12
+
+project_name: cviruntime
+commit_id: cba032da44b61f2b711bfbd2da5c01f0f134f358 cviruntime: weekly rls 2026.11.12
+
+project_name: cvi_rtsp
+commit_id: 6f6715eef83fc33700110c44cdcde85668d0a804 cvi_rtsp: weekly rls 2026.11.12
+
+project_name: flatbuffers
+commit_id: 6da1cf79d90eb242e7da5318241d42279a3df3ba [rust] Add use declarations to Rust-generated bindings for imported FB definitions (#5645)
+
+project_name: cvibuilder
+commit_id: 4309f2a649fc7cfe7160389d52a81c469dbdd7bc [feat] cvibuilder opensource for cv18xx soc.
+
+project_name: cvikernel
+commit_id: d94f5d4f6f57b9d05099c9721845fb147fb8049d cvikernel: weekly rls 2026.11.12
+
+project_name: opensbi
+commit_id: d607a7c46a097ef55258f8b1c8c2077eaf581363 opensbi: weekly rls 2026.11.12
+
+project_name: cvi_alios_open
+commit_id: 781f0d6d42519c63f687bd1ff59b0b74f189d0a0 cvi_alios: weekly rls 2026.11.12
+
+project_name: build
+commit_id: 476a3ae39394238ca56112f7afeabbe529d827e2 build: weekly rls 2026.11.12
+
+project_name: SensorSupportList
+commit_id: 2792cd25e75dd7b95f2ce9ec5bc1b6fefc597657 SensorSupportList: weekly rls 2026.11.12
+
+project_name: host-tools
+commit_id: 103c66f126fa98fcaa8b54f37fa06f6b293fd074 host-tools: upload Xuantie-900-gcc-elf-newlib-x86_64-V2.8.1
+
+project_name: oss
+commit_id: a9b8282e46bcacb02cf2592c81ac4d5a58cb8e05 [fix](oss): add sqlite.tar.gz
+
+project_name: cnpy
+commit_id: 2f56f4c23ea840f9d15c43801368cf4a089efa84 [feat] cnpy opensource for cv18xx soc.
+
+project_name: isp_tuning
+commit_id: 5a3649aeb047d0178dc07372599ca1dd79095534 isp_tuning: weekly rls 2026.11.12
+
+project_name: ive
+commit_id: d78e68421cddb551f920aa74eb6aa356327408ac ive: weekly rls 2026.11.12
+
+project_name: isp-tool-daemon
+commit_id: 92d6f3fc80e114d433a51db3fda390eed8dea45c isp-tool-daemon: weekly rls 2026.11.12
+
+project_name: fsbl
+commit_id: 7204ef581a85df18ef4fce9eb69c0b9e6f972ebe fsbl: weekly rls 2026.11.12
+
+project_name: cvimath
+commit_id: ce8705f49da5e5f59c2ddb3253ef88323a0cd9c4 [feat] cvimath opensource for cv18xx soc.
+
+project_name: u-boot-2021.10
+commit_id: 0c44d4d72dd68e1d352aeaaea717f65287fb4a50 u-boot-2021.10: weekly rls 2026.11.12
+
+project_name: rt-thread
+commit_id: ca04a5c79e1db7fe94d885d1d3151346c714a246 rt-thread: weekly rls 2026.11.12
+
+project_name: ramdisk
+commit_id: 886a825fc16771bfb71261d9158ec5c5a6136352 ramdisk: weekly rls 2026.11.12
+
+project_name: kissfft
+commit_id: 7bce4153c6bc8aba2db0e889e576f9d00505cbe1 README.md: Tweak wording (#100)
+
+project_name: tdl_sdk
+commit_id: e7a1ca4cda0714d53dd3a8398a4f6ad6dd61d073 tdl_sdk: weekly rls 2026.10.27
+
+project_name: sophpi
+commit_id: 73bf910c832de31554aca3d47caaf0cd4e7faa10 sophpi: weekly rls 2026.11.06
+
+project_name: linux_5.10
+commit_id: 2cda1588c876e67e1e14a6dc2e3d3aa8abfc812a linux_5.10: weekly rls 2026.11.12
+
+project_name: cvi_mpi
+commit_id: 390e8e24432cbe32e22a6d2e9395b0af23cbb615 cvi_mpi: weekly rls 2026.11.12
+

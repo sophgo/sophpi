@@ -140,7 +140,7 @@ project_name: linux_5.10
 commit_id: ea487d9a2060255867349d7985ce8b9b0055277a [feat](flash): sync NOR/NAND support list with Mars3/v632
 
 project_name: isp
-commit_id: c10e9491617f8837ae45ecb6e8b248d275aac450 [fix](isp): v410 release info update
+commit_id: 5089c0cf22a3f5788393a5806a6d53ee3f0eb77f [fix](isp): v410 release info update
 
 project_name: mediapipe
 commit_id: 29b536962af0d132dbaf62723dec9d2f2d924364 [fix](mediapipe)fix vo intfSync param takes no effect.

@@ -44,6 +44,28 @@ clean_all
 build_all
 ```
 
+## CV190X SDK 编译步骤
+
+### 获取源码
+
+步骤一:
+
+``` bash
+mkdir -p <WORKSPACE>
+cd <WORKSPACE>
+git clone -b sg200x-evb git@github.com:sophgo/sophpi.git
+./sophpi/scripts/repo_clone.sh --gitclone sophpi/scripts/subtree_cv190x-v5.x.xml
+```
+
+步骤二:
+
+``` bash
+source build/envsetup_soc.sh
+defconfig cv1900b_wevb_0019a_spinor
+clean_all
+build_all
+```
+
 ## BM1688 & CV186AH SDK 编译步骤
 
 ### 获取源码
@@ -138,6 +160,12 @@ TODO
 | v4.2.0.1 | 2026.05.08 | 1、全线产品新导入了几款KGD；|
 | v4.2.1 | 2026.06.30 | 1、Sensor适配：新增GC4663、OS02H10、CV2005、TP9951、SC285SL、OS02G10，优化IMX675 AE控制；2、Panel/VO适配：新增RGB接口驱动、VPSS stitch送VPSS/VO/VENC、修复VO gamma设置概率性错误；3、Build适配：新增cv1815ja_wevb_0020a_*、cv1815j_wevb_0020a_*板卡配置及ddr3_1600_x16选项，新增musl arm编译修复Y2K38，修复mkubiimg/pack_prog_img；4、Flash/U-boot/Linux适配：新增XT26G01F、XT26G04CWSIGA、ZB35Q01CYIG、XT26G04D、F50L1G41LC-2P、GD25F128FSIGR、UC25IQ128、W25Q512JV等spinand/spinor支持，修复eMMC env保存、spacc hang、efuse读KEY失败、nand ecc检测；5、DDR/FSBL适配：CV1815J外挂DDR3 bringup、RX ODT 120ohm，新增ESMT/UniIC/Nanya等DDR vendor，修复eMMC clk div；6、Osdrv/Ramdisk适配：新增GT9xx触摸驱动、cvifb close保活、ipcm消息统计，修复PWM/ADC/clock_cooling suspend/resume，logrotate改为1h；7、Toolchain适配：新增musl arm64/arm32工具链(host-tools/cviruntime/oss/tdl_sdk)、opencv4.5静态库编译、新增curl；8、tdl_sdk：新增yolov11、yolov8 ROI、deepseek LLM交互、blip/yolo world v2、半身人脸识别；9、opensbi：支持CV181X/CV180X suspend/resume；|
 | v4.2.2 | 2026.08.24 | 1、Sensor适配：新增OV4683/OV4689传感器驱动（cvi_mpi及cvi_alios双系统）；2、Panel/VO适配：新增DSI屏ST7102_480x854、LVDS屏G101JL-S04_1024x600 bringup，cvi_alios修复I80接口bug；3、Build适配：更新cv1815j/cv1815ja_wevb_0020a_*板卡config、移除ddr_auto_x16选项、更新sensor_list；4、DDR/FSBL适配：新增ddr3_1600_x16配置、CV1815J外挂DDR3写GP_REG3=0x1815、补充LICENSE；5、Flash/U-boot/Linux适配：新增XinCun XCSP1AXPK-IT、DS35Q4GB-IB、W25N04LV等SPI-NAND支持，efuse新增CV181X-AUX0芯片判定；6、Osdrv/cvi_alios适配：新增CV1815J外挂DDR板卡芯片ID、修复CV1835误判、PWM使能前恢复REG_PERIOD/HLPERIOD、cvifb close保活；|
+
+## CV190X SDK 修订记录
+
+| 版本号  | 版本日期  | 版本更新内容                                      |
+| ------ | --------- | ------------------------------------------------ |
+| v5.3.1.1.0 | 2026.11.12 | 1. CV190X SDK 首次发布，支持 CV1900B / CV1901C / CV1904G（riscv64 musl 工具链）；2. 新增板卡配置：cv1900b_wevb_0019a_emmc/spinand/spinor、cv1901c_wevb_0018a_emmc/spinor、cv1904g_wevb_0022a_spinand/spinor；|
 
 ## BM1688 & CV186AH SDK 修订记录
 

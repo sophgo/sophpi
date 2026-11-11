@@ -1,0 +1,150 @@
+project_name: osdrv
+commit_id: d3dfa69cbad142d9fa43bc62c142f5ee1756edb2 [fix](release): add cif to osdrv release ko list
+
+project_name: osal
+commit_id: 7ca009fd7350907a998b4564a9362b1f69388810 [fix](osal): register alios module init/exit macros
+
+project_name: cviruntime
+commit_id: 10f8723e6f1cd1a295b02055d2b93a7662c7ea79 [fix](build): tolerate source tree exported without .git
+
+project_name: freertos
+commit_id: 2c90dc33053c7fdf3dfc3ef691ef844e8a38a302 [fix](freertos):add cv190x
+
+project_name: cvi_rtsp
+commit_id: b95616f234a99c6f1d597eb46987106d254da3f2 [docs](cvi_rtsp):add LICENSE and README.md [description ]:NA [root   cause]:NA [JIRA      ID]:https://jira.sophgo.com/browse/CV184XSDK-593 [chip project]:cv184x [side effects]:NA [Affected *.ko/*.so/*.a] :NA
+
+project_name: flatbuffers
+commit_id: 6da1cf79d90eb242e7da5318241d42279a3df3ba [rust] Add use declarations to Rust-generated bindings for imported FB definitions (#5645)
+
+project_name: cvibuilder
+commit_id: 4ec46e8c0e4072d4c05904221fc4d4a9f260a1a5 add tensor size
+
+project_name: cvikernel
+commit_id: ddd71e88df30abd652c454e9a52ba39b81349cbf fix: phobos3 LMEM is 32KB, not 16KB
+
+project_name: opensbi
+commit_id: dcaedbd4d3251eec659b9a4c1b6eb3052b28420e [fix](str):fix cv190x STR suspend/resume path
+
+project_name: cvi_alios
+commit_id: f39f39a2b1ba72b32a799274097020af9715b34a [fix](rhino_arch): bound MSIP handshake around VIC_TSPDR task switch
+
+project_name: build
+commit_id: a3b2995f623ec40ff3673c5e67a78c7ae89f292f [fix](mpi_uapi): drop stale *_driver_init/_exit declarations
+
+project_name: SensorSupportList
+commit_id: 29ddb521c0ff9796617e5fbe75325b1e98c6d605 [fix](sensor): speed up IMX586 8M60/2M120 stream start
+
+project_name: cvi_manifest (fetch)
+commit_id: 63d2a1ec8bc0762f78bb62efc40dff50efd64a21 [feat](phobosX):add tag 'release_v5_3.1.1.0'
+
+project_name: googletest
+commit_id: e2239ee6043f73722e7aa812a459f54a28552929 Googletest export
+
+project_name: eigen
+commit_id: c86165651f02c52df3b5783b50353f992fb40d94 initial commit
+
+project_name: stb
+commit_id: af1a5bc352164740c1cc1354942b1c6b72eacb8a Update bug_report.md
+
+project_name: thttpd
+commit_id: 1bf87adea1646993112451aa9a06301049bbed58 add wasm mime_type to support webAssembly
+
+project_name: flatbuffers
+commit_id: 6da1cf79d90eb242e7da5318241d42279a3df3ba [rust] Add use declarations to Rust-generated bindings for imported FB definitions (#5645)
+
+project_name: libuv
+commit_id: 4a2b2ec91101c08e80a4a25b11c8d674bb5d9002 Add libuv 1.44.1
+
+project_name: curl
+commit_id: dfead1a100864868760cd4337875077727617ef0 [feat] add curl v8.2.1 release. [source] https://curl.se/download/curl-8.2.1.tar.gz No local changes.  Only extracted official release.
+
+project_name: nanomsg (fetch)
+commit_id: cc19ff68b68ebf9d6a2940b31bad23669ebfa403 Revert "fixes #997 Windows IPC Assertion failed: !self->pipesendbuf"
+
+project_name: json-c
+commit_id: dc1ef7d566e0857bb10772e9048198ba46bd1485 Merge pull request #718 from Pawday/master
+
+project_name: cvi-miniz
+commit_id: e532ee97053e7d63f5f97d70c79975430b7fcd3b push source code modify by Evan.zhao 	base on miniz
+
+project_name: nlohmannjson
+commit_id: de080a1a1af4f540501cb5cd708848aabcd99585 initial commit
+
+project_name: cvi-json-c
+commit_id: 99e117d3367f142ed09b703302e440f59c6a3cda remove functions from unused macro definition
+
+project_name: fsck
+commit_id: 7853b17092b899f65e0568dee09820526d84db82 [description ]: fsck tool changed to support sd card with 64GB or larger size [root cause  ]: NA [mantis id   ]: NA [chip project]: NA [confirm test]: NA [side effects]: delete some functions which will allocate large memory
+
+project_name: ffmpeg
+commit_id: 650912c9f4f7857229f73274957b9d99bef4a74b Merge "Add fsync option before close fd"
+
+project_name: miniz
+commit_id: 61a5a68e72461a79b751043eda6eff9b66bf5616 push source code
+
+project_name: openssl
+commit_id: 7bbdb5b7895b5e30a98ef81d6818f779dc59f2da Remove openssl submodules
+
+project_name: oss
+commit_id: f081db00868e7a85ac88ac4abaa9778df7ea70ff [feat](rootfs): add musl arm64 toolchain [description ]:NA [root   cause]:NA [JIRA      ID]:NA [chip project]:NA [side effects]:NA [Affected *.ko/*.so/*.a] :NA
+
+project_name: glog
+commit_id: 42efa4f5447bfd58dc11f356b234658078737e46 [SYSLOG] update syslog channel from user to local6
+
+project_name: opencv
+commit_id: a7160afbc998471dd4bd089ab1430dbd3171ee89 [uclibc] replace -O3 options with -O2 -Os when build with uclibc
+
+project_name: sqlite3
+commit_id: 601f3b084eaaac76e95bdd87fab1c9a9482da5c2 import sqlite3 as 20200918 download release tarball
+
+project_name: opencv (fetch)
+commit_id: f4e3ffb5d5355619f10fea38ba73205e1afc6f92 [uclibc] replace -O3 options with -O2 -Os when build with uclibc
+
+project_name: zlib
+commit_id: e827145fbbe6773408dc7601ef1d063442bed2b9 import zlib 1.2.11
+
+project_name: libwebsockets
+commit_id: 9bf0ae38c86e3d3d6c9bf1e40addaf0384142769 mirror from v4.1-stable (https://github.com/warmcat/libwebsockets.git)
+
+project_name: live555
+commit_id: 11357247c36fc600df52735d5ed9e4da606d3a1d add CFLAGS into COMPILE_OPTS
+
+project_name: cnpy
+commit_id: 05f09a5309b6ed7884af2d7274135d547ee9d84e v230 aarch64 musl
+
+project_name: isp_tuning
+commit_id: ab9ee5e7f9815b84e655a54e40237944892ba237 [feat](isp_tuning): add the SC2331 sdr profile, drop the cv184x cv2003 profile [description ]:Add cv190x/src/cvsens_sc2331/ from the vendor PQ-tool export (35 modules, 1034 parameters): the profile JSON and the V2.0 PQ bin exported from the board after applying it (98001 bytes). Remove cv190x/src/cvsens_cv2003/: that profile was brought over from the cv184x platform and does not match the SC2331 sensor used on cv190x. Generated .c/.h stay gitignored and the pqjson test code is rebuilt from the remaining directory. [root   cause]:NA [JIRA      ID]:NA [chip project]:cv190x [side effects]:cv190x has a single SDR tuning profile now. The cv1900b_wevb_0019a_* and cv1904g_wevb_0022a_spinand boards select cvsens_sc2331 in the paired build change; boards without an explicit choice fall back to the only remaining profile. No source change. [Affected *.ko/*.so/*.a] :NA
+
+project_name: ive
+commit_id: e33b6565a2de6c9ba2211edeec0c9b701ec2013f [fix](build): tolerate source tree exported without .git
+
+project_name: isp-tool-daemon
+commit_id: ceea3b04843a05dfe3fa7cc4fefd15ec642f4b8e [fix](isp_test): update the DCI DehazeLight api test to 0..100 [description ]:the DCI api test still used max 5, random 0..5 and abnormal 6..255 for ISP_DCI_ATTR_S.DehazeLight, so after the paired isp change that widens the attribute to 0..100 the "max" step stopped covering the real maximum and the "abnormal" step set values that are now valid. Regenerate the case with max 100, random 0..100 and abnormal 101..255, paired with the cvi_mpi/modules/isp change of the same Change-Id. [root   cause]:generated api test carried the old 0..5 attribute range [JIRA      ID]:NA [chip project]:cv190x [side effects]:only the DehazeLight case changes; the other DCI cases and the test framework are untouched. [Affected *.ko/*.so/*.a] :libisp_test.so
+
+project_name: fsbl
+commit_id: 52104aacfcc7611fe6578731679397e19f402d80 [fix](ddr): correct UniIC N21 pinmux swap and vendor macro spelling
+
+project_name: cvimath
+commit_id: 4aedd4806ddbb9cfda3ee0f0a2e2b500469e8967 remove fenv.h when useing arm toolchain
+
+project_name: u-boot-2021.10
+commit_id: 4c243f32e431b0e7b8ded8c912073299b4adb86a Merge "[fix](efuse): accept CV1904G chip id for fastboot" into phobosX
+
+project_name: rt-thread
+commit_id: 2836bc4272d7d88a25921de5003315ae0953288b [feat](pinmux): regenerate cv190x pinlist from reg_fmux_gpio.xls
+
+project_name: ramdisk
+commit_id: 5a91233d096a0481061a45563f6f6eed12308b01 [feat](phobos3): add static bash for musl_riscv64
+
+project_name: tdl_sdk
+commit_id: ebddbfc3c002a76b306d890bdac6d0b05e78e1c9 [fix](cvitek/tdl_sdk): athena2 sdk release rule
+
+project_name: linux_5.10
+commit_id: fcca94d39dfad8f0238b67c96b0a924bfe59e36f [feat](efuse):add cvi-efuse sysfs interface for cv190x
+
+project_name: isp
+commit_id: 1f1e261d78f5bfa7e8563c7cdf5ad6751bdece19 [fix](isp): pack MoMp snapshot into one slot [description ]:the post_eof TNR MoMp snapshot kept the raw kernel mo buffer (129600B, two ping-pong slots), so isp_shared_buffer grew from 156KB to 412KB (ION ISP_SHARED_BUFFER_0 421888B) while only the 2bpp packed map (32400B) is ever exported. Pack 8bit -> 2bit straight from the kernel buffer in isp_sts_ctrl_set_mo_sts() (still gated by bMoSnapEn, so nothing runs while the MoMap page is off), keep a single slot and let CVI_ISP_GetMmapSts() do a bounded memcpy of the packed map. A single slot means a reader can observe a torn frame; the map only feeds the debug MoMap page, so that is accepted. The reader freezes the snapshot header once and bounds the copy against CVI_MMAP_STS_DATA_MAX and the caller buffer size. [root   cause]:the snapshot stored the intermediate raw buffer instead of the only representation the API ever returns, and paid for a second slot that was only needed for tear-free reads that no consumer requires [JIRA      ID]:NA [chip project]:cv190x [side effects]:ISP_SHARED_BUFFER_0 421888 -> 192512 bytes (412KB -> 188KB), 32KB above a build without the feature. The per-frame raw buffer cache invalidate (~127KB) is unchanged, only the snapshot copy shrinks to 32KB and the packing moves to post_eof. CVI_ISP_GetMmapSts() keeps the same wire format, geometry and failure conditions. Board: MoMap RPC returns 480x270 stride 120 32400B with the frame id advancing, 20 back-to-back reads while streaming all succeed. [Affected *.ko/*.so/*.a] :libisp
+
+project_name: cvi_mpi
+commit_id: 7617da7bf1db4039e516b22ecc3bef72f9c5d4a8 [fix](sys): restore reading chip id through the driver
+
